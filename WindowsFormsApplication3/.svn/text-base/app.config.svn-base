@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<configuration>
+
+	<configSections>
+		<section name="log4net" type="System.Configuration.IgnoreSectionHandler"/>
+		<sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+			<section name="UnlockRoomService.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+		</sectionGroup>
+	</configSections>
+	
+	<appSettings>
+		<!--数据库连接配置-->
+		<add key="dbconnect" value="server=192.168.1.223;database=Hotels_BackSystem;port=3306;uid=root;password=youotech"/>
+		<!--定时解锁服务时间配置-->
+		<add key="timer" value="60000"/>
+	</appSettings>
+
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+	</startup>
+
+	
+	
+	<log4net>
+		<!--定义输出到文件中-->
+		<appender name="RollingLogFileAppender_DateFormat" type="log4net.Appender.RollingFileAppender">
+			<file value="E:/Log/UnlockService_log.txt"/>
+			<appendToFile value="true"/>
+			<rollingStyle value="Date"/>
+			<datePattern value="yyyyMMdd"/>
+			<layout type="log4net.Layout.PatternLayout">
+				<conversionPattern value="%date (%file:%line) %-5level %logger [%property{NDC}] - %message%newline"/>
+			</layout>
+		</appender>
+		<appender name="ConsoleAppender" type="log4net.Appender.ConsoleAppender">
+			<layout type="log4net.Layout.PatternLayout">
+				<conversionPattern value="%date (%file:%line) %-5level %logger [%property{NDC}] - %message%newline"/>
+			</layout>
+		</appender>
+		<root>
+			<!--control log level: ALL|DEBUG|INFO|WARN|ERROR|FATAL|OFF
+			如果没有定义LEVEL的值，则缺省为DEBUG-->
+			<level value="debug"/>
+			<!--文件形式记录日志-->
+			<appender-ref ref="RollingLogFileAppender_DateFormat"/>
+			<!--控制台控制显示日志-System.Diagnostics.Debug.Write("");//控制台显示-->
+			<appender-ref ref="ConsoleAppender"/>
+			<!--Windows事件日志-->
+      <appender-ref ref="EventLogAppender" />
+			 <!--如果不启用相应的日志记录，可以通过这种方式注释掉-->
+      <appender-ref ref="AdoNetAppender_Access" />
+		</root>
+	</log4net>
+	
+</configuration>
+

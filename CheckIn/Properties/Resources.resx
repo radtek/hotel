@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CHANAGE_IDCARD" xml:space="preserve">
+    <value>该身份证已登记，请换下一位住客身份证！</value>
+  </data>
+  <data name="CHECKCHECKININFO" xml:space="preserve">
+    <value>请核对您的入住信息！核对完成请点击下一步！</value>
+  </data>
+  <data name="CHECKININFOUPLOAD" xml:space="preserve">
+    <value>入住信息上传中. . .</value>
+  </data>
+  <data name="CHECKININFOUPLOADERROR" xml:space="preserve">
+    <value>入住信息上传出错。</value>
+  </data>
+  <data name="CHECKININFOUPLOADFAILURE" xml:space="preserve">
+    <value>入住信息上传失败。</value>
+  </data>
+  <data name="CONFIG_WRONG" xml:space="preserve">
+    <value>请检查配置文件节点是否正确！</value>
+  </data>
+  <data name="DEVICEERROR" xml:space="preserve">
+    <value>设备初始化中。</value>
+  </data>
+  <data name="DEVICEINITERROR" xml:space="preserve">
+    <value>设备初始化出错。</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="FABRICATIONCARD" xml:space="preserve">
+    <value>正在制卡。</value>
+  </data>
+  <data name="FACEDETECTERROR" xml:space="preserve">
+    <value>人脸识别模块故障！</value>
+  </data>
+  <data name="FACEDETECTLOADERROR" xml:space="preserve">
+    <value>人脸识别模块加载失败！</value>
+  </data>
+  <data name="GETMONEY" xml:space="preserve">
+    <value>请取走您的钞票！欢迎下次光临！</value>
+  </data>
+  <data name="GETPAPPER" xml:space="preserve">
+    <value>请取走您的凭条！</value>
+  </data>
+  <data name="GETROOMCARD" xml:space="preserve">
+    <value>请取走您的房卡！</value>
+  </data>
+  <data name="GROUPBUY" xml:space="preserve">
+    <value>团购</value>
+  </data>
+  <data name="HOLDANDCALLADMIN" xml:space="preserve">
+    <value>请保持此界面，并联系管理员！</value>
+  </data>
+  <data name="IDCARDDEVICEFAULT" xml:space="preserve">
+    <value>身份证模块故障</value>
+  </data>
+  <data name="IDCARDOVERDUE" xml:space="preserve">
+    <value>身份证已过有效期，不能入住！</value>
+  </data>
+  <data name="IDCARD_MSG" xml:space="preserve">
+    <value>请将身份证放在读卡区域！</value>
+  </data>
+  <data name="INFO" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="INMONEYERROR" xml:space="preserve">
+    <value>入钞模块故障：请联系前台人员。点击“确定”按钮，请重试，“取消”返回主界面\n</value>
+  </data>
+  <data name="INMONEYOK" xml:space="preserve">
+    <value>入钞完成。</value>
+  </data>
+  <data name="INPUTPHONE" xml:space="preserve">
+    <value>请输入您的手机号！输入完成请点击下一步！</value>
+  </data>
+  <data name="INPUTVILIDATIONCODE" xml:space="preserve">
+    <value>请输入您的验证码和手机号！输入完成请点击下一步！</value>
+  </data>
+  <data name="INSERTROOMCARD" xml:space="preserve">
+    <value>请将房卡插入房卡出入口！</value>
+  </data>
+  <data name="INSERTROOMCARDERROR" xml:space="preserve">
+    <value>收卡出错</value>
+  </data>
+  <data name="MACHINE_ERROR" xml:space="preserve">
+    <value>本机出现故障，请前往前台办理！</value>
+  </data>
+  <data name="MACHINE_ERROR_RETRY" xml:space="preserve">
+    <value>硬件故障，请重试。</value>
+  </data>
+  <data name="MONEYNOTENOUGH" xml:space="preserve">
+    <value>余额不足，请联系前台。</value>
+  </data>
+  <data name="NETCOMMUNICATION" xml:space="preserve">
+    <value>网络通讯错误,请保持本界面状态,联系前台相关人员。\n点击“确认”后将返回主界面。</value>
+  </data>
+  <data name="NETCOMMUNICATIONERROR" xml:space="preserve">
+    <value>网络通讯错误。</value>
+  </data>
+  <data name="OUTCARD" xml:space="preserve">
+    <value>正在出卡。</value>
+  </data>
+  <data name="PASSWORDNULL" xml:space="preserve">
+    <value>密码不能为空。</value>
+  </data>
+  <data name="PASSWORDWORRY" xml:space="preserve">
+    <value>密码不正确，请重新输入。</value>
+  </data>
+  <data name="PHONENULL" xml:space="preserve">
+    <value>手机号不能为空</value>
+  </data>
+  <data name="PHONENUMBERLENGTH" xml:space="preserve">
+    <value>手机号长度必须为11位</value>
+  </data>
+  <data name="PLACEIDCARD" xml:space="preserve">
+    <value>请将身份证放在身份证读卡区域！</value>
+  </data>
+  <data name="PRINTERROR" xml:space="preserve">
+    <value>打印出错。</value>
+  </data>
+  <data name="PRINTING" xml:space="preserve">
+    <value>正在打印...</value>
+  </data>
+  <data name="PRINTOK" xml:space="preserve">
+    <value>打印完成，请取凭条。</value>
+  </data>
+  <data name="PUTINMONEY" xml:space="preserve">
+    <value>请交押金、房费{0}元!</value>
+  </data>
+  <data name="RETRYING" xml:space="preserve">
+    <value>正在重试...</value>
+  </data>
+  <data name="ROOMCARDFABRICATION" xml:space="preserve">
+    <value>正在为您制作房卡！请稍后！</value>
+  </data>
+  <data name="VALIDATIONNULL" xml:space="preserve">
+    <value>验证码不能为空</value>
+  </data>
+  <data name="WAITINMONEY" xml:space="preserve">
+    <value>请交押金、房费{0}元!</value>
+  </data>
+  <data name="WELCOME" xml:space="preserve">
+    <value>你好！很高兴为您服务！</value>
+  </data>
+  <data name="WRAN" xml:space="preserve">
+    <value>警告</value>
+  </data>
+</root>

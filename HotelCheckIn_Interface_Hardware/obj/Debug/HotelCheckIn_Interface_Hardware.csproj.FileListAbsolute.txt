@@ -1,0 +1,13 @@
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\ReadIdCard\sdtapi.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\ReadIdCard\WltRS.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\HotelCheckIn_Interface_Hardware.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\HotelCheckIn_Interface_Hardware.pdb
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\CommonLibrary.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\log4net.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\YOUO.Framework.DataAccess.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\MySql.Data.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\bin\Debug\CommonLibrary.pdb
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\obj\Debug\HotelCheckIn_Interface_Hardware.csprojResolveAssemblyReference.cache
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\obj\Debug\HotelCheckIn_Interface_Hardware.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\obj\Debug\HotelCheckIn_Interface_Hardware.pdb

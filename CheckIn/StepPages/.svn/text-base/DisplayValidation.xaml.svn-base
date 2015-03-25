@@ -1,0 +1,66 @@
+﻿<Page x:Class="CheckIn.StepPages.DisplayValidation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:CheckIn.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="1024" d:DesignWidth="1280"
+	Title="DisplayValidation">
+    <Page.Background>
+        <ImageBrush ImageSource="../Images/背景图.jpg" Stretch="Fill"></ImageBrush>
+    </Page.Background>
+    <Grid Loaded="Grid_Loaded" Unloaded="Grid_Unloaded">
+        <local:CheckInStep Height="580" Margin="117,192,0,0" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="Step"></local:CheckInStep>
+        <Canvas Height="52" HorizontalAlignment="Right" Name="canvas1" VerticalAlignment="Top" Width="246.658">
+            <Label Canvas.Left="0" Canvas.Top="9" FontFamily="微软雅黑" FontSize="25" Foreground="Black" Height="39" Name="label3" Width="157">操作倒计时：</Label>
+            <Label Canvas.Left="157" Canvas.Top="13" FontFamily="Times New Roman" FontSize="25" Foreground="Red" Height="37" Name="labelNum" Width="47"></Label>
+            <Label Canvas.Left="199.658" Canvas.Top="9" FontFamily="微软雅黑" FontSize="25" Foreground="Red" Height="39" Name="label5" Width="44">秒</Label>
+        </Canvas>
+        <Grid Margin="449,142,231,132" Width="600" Height="740" xml:space="preserve">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="140"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="155"></RowDefinition><RowDefinition Height="95*" />
+            </Grid.RowDefinitions>
+            <Label FontSize="25" Name="LbValidateCodewz"  FontFamily="微软雅黑"  Grid.Row="0" Grid.Column="0" >验 证 码：</Label>
+            <Label Name="LbValidationCode" Height="40" Width="300" Margin="4,5,156,5" Style="{StaticResource LabelStyle1}" Grid.Column="1"  Grid.Row="0"></Label>
+            <Label FontSize="25" Name="LbPhonewz"  FontFamily="微软雅黑"  Grid.Row="1" Grid.Column="0" >手 机 号：</Label>
+            <Label Name="LbPhone" Height="40" Width="300" Margin="4,5,156,5" Style="{StaticResource LabelStyle1}" Grid.Column="1" Grid.Row="1" ></Label>
+            <Label FontSize="25" FontFamily="微软雅黑" Grid.Row="2" Grid.Column="0" >楼      栋：</Label>
+            <Label Height="40" Width="300"  Margin="4,5,156,5" Style="{StaticResource LabelStyle1}" Name="LbBuilding" Grid.Row="2" Grid.Column="1" >#1</Label>
+            <Label FontSize="25" FontFamily="微软雅黑" Grid.Row="3" Grid.Column="0" >楼      层：</Label>
+            <Label Height="40" Width="300"  Margin="4,5,156,5" Style="{StaticResource LabelStyle1}" Name="LbFloor" Grid.Row="3" Grid.Column="1" >2层</Label>
+            <Label FontSize="25" FontFamily="微软雅黑" Grid.Row="4" Grid.Column="0" >房      型：</Label>
+            <Label Height="40" Width="300"  Margin="4,5,156,5" Style="{StaticResource LabelStyle1}" Name="LbRoomType" Grid.Row="4" Grid.Column="1" >标间</Label>
+            <Label FontSize="25"  FontFamily="微软雅黑" Grid.Row="5" Grid.Column="0" >房      号：</Label>
+            <Label Height="40" Width="300" Margin="4,5,156,5" Style="{StaticResource LabelStyle1}" Name="LbRoomNum" Grid.Row="5" Grid.Column="1" >8310</Label>
+            <Label FontSize="25" FontFamily="微软雅黑" Grid.Row="6" Grid.Column="0" >房      价：</Label>
+            <Label Height="40" Width="300"  Margin="4,5,156,5" Style="{StaticResource LabelStyle1}" Name="LbRate" Grid.Row="6" Grid.Column="1" >朝南</Label>
+            <Label FontSize="25" FontFamily="微软雅黑" Grid.Row="7" Grid.Column="0" >人      数：</Label>
+            <Button Margin="5,6,0,4" Name="popCut" Style="{StaticResource PlusButton-Style}" Grid.Column="1" Grid.Row="7" Click="PopCutClick" HorizontalAlignment="Left" />
+            <TextBox Name="TbCustomerCount" Height="40" Width="100"  Style="{StaticResource TextBoxStyle1}" Grid.Row="7" Grid.Column="1" IsReadOnly="True" Margin="67,6,293,4">1</TextBox>
+            <Button Margin="192,6,228,4" Name="popAdd" Style="{StaticResource AddButton-Style}" Grid.Column="1" Grid.Row="7" Click="PopAddClick" />
+            <Label FontSize="25" FontFamily="微软雅黑" Grid.Row="8" Grid.Column="0" >入住时间：</Label>
+            <Label Height="40" Width="300" Margin="4,5,156,5" Style="{StaticResource LabelStyle1}" Name="LbCheckinDate" Grid.Row="8" Grid.Column="1"  >2113-11-28 15:33</Label>
+            <Label FontSize="25"  FontFamily="微软雅黑" Grid.Row="9" Grid.Column="0" >退房时间：</Label>
+            <Label Height="40" Width="300" Margin="4,5,156,5" Style="{StaticResource LabelStyle1}" Name="LbCheckoutDate" Grid.Row="9" Grid.Column="1"  >2013-11-30 12:00</Label>
+            <Label FontSize="25"  FontFamily="微软雅黑" Grid.Row="10" Grid.Column="0" >备      注：</Label>
+            <TextBlock Width="450" Name="LbNote" FontSize="20" Height="140"  FontFamily="微软雅黑" LineHeight="30" Grid.Row="10" Grid.Column="1" Margin="5,10,5,10" ></TextBlock>
+        </Grid>
+        <Button Name="Pre" Margin="450,817,630,117" Style="{StaticResource LastButton-Style}" Click="Pre_Click"></Button>
+        <Button Name="Next" Margin="655,817,425,117" Style="{StaticResource NextButton-Style}" Click="Next_Click"></Button>
+        <Button Name="Back" Margin="860,817,220,117" Style="{StaticResource BackButton-Style}" Click="Back_Click"></Button>
+    </Grid>
+</Page>

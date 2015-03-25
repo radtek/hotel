@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Checkin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="checkIn" type="tns:CheckInModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CheckInModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OrderId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HotelId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoomNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoomType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Building" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderPmsCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoomCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RoomRate" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="KnockDownPrice" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="OriginalPrice" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="VipCardNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VipCardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdentificationType" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nation" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Adrress" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Birthday" type="tns:ArrayOfDateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="NamePy" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sex" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdentityCardNum" type="tns:ArrayOfString" />
+          <s:element minOccurs="1" maxOccurs="1" name="PeopleNum" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CheckInTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CheckOutTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="PayType" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="PayWay" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentAmount" type="tns:ArrayOfFloat" />
+          <s:element minOccurs="0" maxOccurs="1" name="HepPayGuid" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Batch" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobNumberPmsCode" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperTime" type="tns:ArrayOfDateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionType" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="CardNum" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="Validity" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="MacId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Images" type="tns:ArrayOfBase64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="DoorLockSign" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PmsSign" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="InternetGroup" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CheckId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Coupon" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CardCount" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassPmsCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RelevancyCheckinPmsCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimeType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IndividualOrGroup" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoomNumPmsCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDateTime">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="dateTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfFloat">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="float" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBase64Binary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="base64Binary" nillable="true" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckinResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryCheckNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="qcnInfo" type="tns:QueryCheckNoInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="QueryCheckNoInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CheckNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MacId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HotelId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CheckinTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CheckoutTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryCheckNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryCheckNoResult" type="tns:QueryNoAndPj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="QueryNoAndPj">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseModelOfQueryNoAndPj">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="MachineCheck" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="InSumDate" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CheckIdBeginTime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="CheckIdEndTime" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="RoomTypeId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RoomTypeName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProjectFrontNum" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProjectName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InternetGroupId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="InternetGroup" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CreateTimeBegin" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="CreateTimeEnd" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="CheckQuery" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Building" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Floor" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RoomNum" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Towards" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CheckInTime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="CheckOutTime" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CheckNo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="IsBook" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PmsOrderId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RoomRateCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Rate" type="s:float" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseModelOfQueryNoAndPj" abstract="true" />
+      <s:element name="UpdateHotel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hotelId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="macId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateHotelResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="IHeartBeat_Pt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="para" type="tns:HearBeatPara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HearBeatPara">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MachineId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FalutId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NowDt" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="IHeartBeat_PtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IHeartBeat_PtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIoJournal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="io" type="tns:IoJournal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="IoJournal">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseModelOfIoJournal">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="IoTime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="BeginTime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="EndTime" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="IoId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="IoName" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IoMoney" type="s:decimal" />
+              <s:element minOccurs="1" maxOccurs="1" name="IoTag" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsUse" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="IoFrom" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="OrderId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RoomNo" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="InIsOrNotOut" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="QuerySign" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="InOrOutCard" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseModelOfIoJournal" abstract="true" />
+      <s:element name="AddIoJournalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddIoJournalResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckOutExamine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roomCardInfo" type="tns:RoomCardInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RoomCardInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RoomNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdCardNum" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckOutExamineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckOutExamineResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="brbean" type="tns:BalanceRegister" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BalanceRegister">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseModelOfBalanceRegister">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RegisterId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BalanceMoney" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PaymentTypeId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreditCardTypeId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreditCardNo" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseModelOfBalanceRegister" abstract="true" />
+      <s:element name="CheckOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckOutResult" type="tns:ReturnInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReturnInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="return_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RoomLockSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roomno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="checkno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="macid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RoomLockSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RoomLockSetResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryEmptyRoomList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="roomType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="checkInDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="checkOutDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryEmptyRoomListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryEmptyRoomListResult" type="tns:ArrayOfRoom" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRoom">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Room" nillable="true" type="tns:Room" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Room">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="room_No" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="room_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="room_Type_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="room_Type_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="room_Building_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="room_Floor_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="room_Direction_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="door_Room_No" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckPasswordResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditIoIfCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bean" type="tns:IoJournal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditIoIfCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EditIoIfCardResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRoomRate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bean" type="tns:QueryRoomRateInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="QueryRoomRateInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PriceSouce" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ValidationCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HotelPmsCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CheckinTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CheckoutTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="RoomTypeCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateType" type="tns:E29" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeType" type="tns:E12" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderType" type="tns:E26" />
+          <s:element minOccurs="1" maxOccurs="1" name="PriceType" type="tns:E65" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceType2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PmsRoomRateCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="E29">
+        <s:restriction base="s:string">
+          <s:enumeration value="NotLimited" />
+          <s:enumeration value="UsualPrice" />
+          <s:enumeration value="WeekendPrice" />
+          <s:enumeration value="SpecificPrice" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="E12">
+        <s:restriction base="s:string">
+          <s:enumeration value="NotLimited" />
+          <s:enumeration value="OvernightRoom" />
+          <s:enumeration value="BeforeDawnRoom" />
+          <s:enumeration value="HourRoom" />
+          <s:enumeration value="LongPackageRoom" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="E26">
+        <s:restriction base="s:string">
+          <s:enumeration value="NotLimited" />
+          <s:enumeration value="WalkInCheckIn" />
+          <s:enumeration value="HotelReservations" />
+          <s:enumeration value="CrsReservations" />
+          <s:enumeration value="WebReservations" />
+          <s:enumeration value="MobileReservations" />
+          <s:enumeration value="HepSelfMachine" />
+          <s:enumeration value="ReservationsPlatformButt" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="E65">
+        <s:restriction base="s:string">
+          <s:enumeration value="NotLimited" />
+          <s:enumeration value="IndividualPrice" />
+          <s:enumeration value="NetPrice" />
+          <s:enumeration value="MembershipPrice" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetRoomRateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRoomRateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditIoIsUse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="io" type="tns:IoJournal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditIoIsUseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EditIoIsUseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDetect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDetectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QueryDetectResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveDetect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bean" type="tns:Detect" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Detect">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdCard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sex" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdCardImg" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Camera1" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Camera2" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Camera3" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vedio" type="s:base64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UpdateDt" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateDt" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Jqid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Operator" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveDetectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveDetectResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryRoomQuality">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="typeId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryRoomQualityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryRoomQualityResult" type="tns:ArrayOfRoomQuality" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRoomQuality">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RoomQuality" nillable="true" type="tns:RoomQuality" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RoomQuality">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseModelOfRoomQuality">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TypeId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HotelId" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseModelOfRoomQuality" abstract="true" />
+      <s:element name="QueryRztfTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="QueryRztfTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryRztfTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckinSoapIn">
+    <wsdl:part name="parameters" element="tns:Checkin" />
+  </wsdl:message>
+  <wsdl:message name="CheckinSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckinResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryCheckNoSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryCheckNo" />
+  </wsdl:message>
+  <wsdl:message name="QueryCheckNoSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryCheckNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateHotelSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateHotel" />
+  </wsdl:message>
+  <wsdl:message name="UpdateHotelSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateHotelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHeartBeat_PtSoapIn">
+    <wsdl:part name="parameters" element="tns:IHeartBeat_Pt" />
+  </wsdl:message>
+  <wsdl:message name="IHeartBeat_PtSoapOut">
+    <wsdl:part name="parameters" element="tns:IHeartBeat_PtResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddIoJournalSoapIn">
+    <wsdl:part name="parameters" element="tns:AddIoJournal" />
+  </wsdl:message>
+  <wsdl:message name="AddIoJournalSoapOut">
+    <wsdl:part name="parameters" element="tns:AddIoJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckOutExamineSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckOutExamine" />
+  </wsdl:message>
+  <wsdl:message name="CheckOutExamineSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckOutExamineResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckOutSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckOut" />
+  </wsdl:message>
+  <wsdl:message name="CheckOutSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="RoomLockSetSoapIn">
+    <wsdl:part name="parameters" element="tns:RoomLockSet" />
+  </wsdl:message>
+  <wsdl:message name="RoomLockSetSoapOut">
+    <wsdl:part name="parameters" element="tns:RoomLockSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryEmptyRoomListSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryEmptyRoomList" />
+  </wsdl:message>
+  <wsdl:message name="QueryEmptyRoomListSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryEmptyRoomListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckPassword" />
+  </wsdl:message>
+  <wsdl:message name="CheckPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditIoIfCardSoapIn">
+    <wsdl:part name="parameters" element="tns:EditIoIfCard" />
+  </wsdl:message>
+  <wsdl:message name="EditIoIfCardSoapOut">
+    <wsdl:part name="parameters" element="tns:EditIoIfCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRoomRateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRoomRate" />
+  </wsdl:message>
+  <wsdl:message name="GetRoomRateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRoomRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditIoIsUseSoapIn">
+    <wsdl:part name="parameters" element="tns:EditIoIsUse" />
+  </wsdl:message>
+  <wsdl:message name="EditIoIsUseSoapOut">
+    <wsdl:part name="parameters" element="tns:EditIoIsUseResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryDetectSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryDetect" />
+  </wsdl:message>
+  <wsdl:message name="QueryDetectSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryDetectResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveDetectSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveDetect" />
+  </wsdl:message>
+  <wsdl:message name="SaveDetectSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveDetectResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryRoomQualitySoapIn">
+    <wsdl:part name="parameters" element="tns:QueryRoomQuality" />
+  </wsdl:message>
+  <wsdl:message name="QueryRoomQualitySoapOut">
+    <wsdl:part name="parameters" element="tns:QueryRoomQualityResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryRztfTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryRztfTime" />
+  </wsdl:message>
+  <wsdl:message name="QueryRztfTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryRztfTimeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="InterFaceSoap">
+    <wsdl:operation name="Checkin">
+      <wsdl:input message="tns:CheckinSoapIn" />
+      <wsdl:output message="tns:CheckinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryCheckNo">
+      <wsdl:input message="tns:QueryCheckNoSoapIn" />
+      <wsdl:output message="tns:QueryCheckNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHotel">
+      <wsdl:input message="tns:UpdateHotelSoapIn" />
+      <wsdl:output message="tns:UpdateHotelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IHeartBeat_Pt">
+      <wsdl:input message="tns:IHeartBeat_PtSoapIn" />
+      <wsdl:output message="tns:IHeartBeat_PtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIoJournal">
+      <wsdl:input message="tns:AddIoJournalSoapIn" />
+      <wsdl:output message="tns:AddIoJournalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckOutExamine">
+      <wsdl:input message="tns:CheckOutExamineSoapIn" />
+      <wsdl:output message="tns:CheckOutExamineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckOut">
+      <wsdl:input message="tns:CheckOutSoapIn" />
+      <wsdl:output message="tns:CheckOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RoomLockSet">
+      <wsdl:input message="tns:RoomLockSetSoapIn" />
+      <wsdl:output message="tns:RoomLockSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmptyRoomList">
+      <wsdl:input message="tns:QueryEmptyRoomListSoapIn" />
+      <wsdl:output message="tns:QueryEmptyRoomListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPassword">
+      <wsdl:input message="tns:CheckPasswordSoapIn" />
+      <wsdl:output message="tns:CheckPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditIoIfCard">
+      <wsdl:input message="tns:EditIoIfCardSoapIn" />
+      <wsdl:output message="tns:EditIoIfCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomRate">
+      <wsdl:input message="tns:GetRoomRateSoapIn" />
+      <wsdl:output message="tns:GetRoomRateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditIoIsUse">
+      <wsdl:input message="tns:EditIoIsUseSoapIn" />
+      <wsdl:output message="tns:EditIoIsUseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryDetect">
+      <wsdl:input message="tns:QueryDetectSoapIn" />
+      <wsdl:output message="tns:QueryDetectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDetect">
+      <wsdl:input message="tns:SaveDetectSoapIn" />
+      <wsdl:output message="tns:SaveDetectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryRoomQuality">
+      <wsdl:input message="tns:QueryRoomQualitySoapIn" />
+      <wsdl:output message="tns:QueryRoomQualitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryRztfTime">
+      <wsdl:input message="tns:QueryRztfTimeSoapIn" />
+      <wsdl:output message="tns:QueryRztfTimeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InterFaceSoap" type="tns:InterFaceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Checkin">
+      <soap:operation soapAction="http://tempuri.org/Checkin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCheckNo">
+      <soap:operation soapAction="http://tempuri.org/QueryCheckNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHotel">
+      <soap:operation soapAction="http://tempuri.org/UpdateHotel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IHeartBeat_Pt">
+      <soap:operation soapAction="http://tempuri.org/IHeartBeat_Pt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIoJournal">
+      <soap:operation soapAction="http://tempuri.org/AddIoJournal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOutExamine">
+      <soap:operation soapAction="http://tempuri.org/CheckOutExamine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOut">
+      <soap:operation soapAction="http://tempuri.org/CheckOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RoomLockSet">
+      <soap:operation soapAction="http://tempuri.org/RoomLockSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmptyRoomList">
+      <soap:operation soapAction="http://tempuri.org/QueryEmptyRoomList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPassword">
+      <soap:operation soapAction="http://tempuri.org/CheckPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditIoIfCard">
+      <soap:operation soapAction="http://tempuri.org/EditIoIfCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomRate">
+      <soap:operation soapAction="http://tempuri.org/GetRoomRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditIoIsUse">
+      <soap:operation soapAction="http://tempuri.org/EditIoIsUse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDetect">
+      <soap:operation soapAction="http://tempuri.org/QueryDetect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDetect">
+      <soap:operation soapAction="http://tempuri.org/SaveDetect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryRoomQuality">
+      <soap:operation soapAction="http://tempuri.org/QueryRoomQuality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryRztfTime">
+      <soap:operation soapAction="http://tempuri.org/QueryRztfTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="InterFaceSoap12" type="tns:InterFaceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Checkin">
+      <soap12:operation soapAction="http://tempuri.org/Checkin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCheckNo">
+      <soap12:operation soapAction="http://tempuri.org/QueryCheckNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHotel">
+      <soap12:operation soapAction="http://tempuri.org/UpdateHotel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IHeartBeat_Pt">
+      <soap12:operation soapAction="http://tempuri.org/IHeartBeat_Pt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIoJournal">
+      <soap12:operation soapAction="http://tempuri.org/AddIoJournal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOutExamine">
+      <soap12:operation soapAction="http://tempuri.org/CheckOutExamine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOut">
+      <soap12:operation soapAction="http://tempuri.org/CheckOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RoomLockSet">
+      <soap12:operation soapAction="http://tempuri.org/RoomLockSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmptyRoomList">
+      <soap12:operation soapAction="http://tempuri.org/QueryEmptyRoomList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPassword">
+      <soap12:operation soapAction="http://tempuri.org/CheckPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditIoIfCard">
+      <soap12:operation soapAction="http://tempuri.org/EditIoIfCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoomRate">
+      <soap12:operation soapAction="http://tempuri.org/GetRoomRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditIoIsUse">
+      <soap12:operation soapAction="http://tempuri.org/EditIoIsUse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDetect">
+      <soap12:operation soapAction="http://tempuri.org/QueryDetect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDetect">
+      <soap12:operation soapAction="http://tempuri.org/SaveDetect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryRoomQuality">
+      <soap12:operation soapAction="http://tempuri.org/QueryRoomQuality" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryRztfTime">
+      <soap12:operation soapAction="http://tempuri.org/QueryRztfTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InterFace">
+    <wsdl:port name="InterFaceSoap" binding="tns:InterFaceSoap">
+      <soap:address location="http://192.168.20.200:8081/DataService/WebService/InterFace.asmx" />
+    </wsdl:port>
+    <wsdl:port name="InterFaceSoap12" binding="tns:InterFaceSoap12">
+      <soap12:address location="http://192.168.20.200:8081/DataService/WebService/InterFace.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

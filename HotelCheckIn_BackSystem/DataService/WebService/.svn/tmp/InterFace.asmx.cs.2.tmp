@@ -1,0 +1,360 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Web.Services;
+using CommonLibrary.exception;
+using HotelCheckIn_BackSystem.DataService.Bll;
+using HotelCheckIn_BackSystem.DataService.Common;
+using HotelCheckIn_BackSystem.DataService.Model;
+using HotelCheckIn_Interface_PMS;
+using HotelCheckIn_InterfaceSystem.model;
+using log4net;
+
+namespace HotelCheckIn_BackSystem.DataService.WebService
+{
+    /// <summary>
+    /// InterFace 的摘要说明
+    /// </summary>
+    [WebService(Namespace = "http://tempuri.org/")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.ComponentModel.ToolboxItem(false)]
+    // 若要允许使用 ASP.NET AJAX 从脚本中调用此 Web 服务，请取消对下行的注释。
+    // [System.Web.Script.Services.ScriptService]
+    public class InterFace : System.Web.Services.WebService
+    {
+        private static ILog log = LogManager.GetLogger("InterFace");
+        private readonly InternetGroupBll Igroupbll = new InternetGroupBll();
+        private readonly CheckinBll checkinbll = new CheckinBll();
+        private readonly MachineInfo machine = new MachineInfo();
+        private readonly AuthenToken _authen = new AuthenToken();
+        readonly RoomLockBll _roomLockBll = new RoomLockBll();
+        readonly CheckNoBll _checkNoBll = new CheckNoBll();
+
+        /// <summary>
+        /// 反馈信息
+        /// </summary>
+        /// <param name="success"></param>
+        /// <param name="errorcode"></param>
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public string GetMsg(int success, string errorcode, string msg)
+        {
+            return "<?xml version='1.0' encoding='utf-8'?><root><success>" + success + "</success><errorcode>"
+                   + errorcode + "</errorcode><msg>" + msg + "</msg></root>";
+        }
+
+
+        [WebMethod]
+        //入住客户开房信息
+        //参数依次代表：订单ID，房间号，房间类型，楼栋，房价代码，房价，入住类型（预订，非预订，钟点房），会员卡号，会员卡类型，入住客人名称(多个客人名称用“#”隔开)，
+        //性别（多个客人用“#”隔开），证件号（多个客人用“#”隔开），入住人数，入住日期，离店日期，钟点数，预付金额，预付方式，终端ID，处理时间，
+        //图片List数组（图片顺序为：第一个人的身份证图片，第二个人的身份证图片，第一个人的摄像头拍照图片，第二个人的摄像头拍照图片），checkin签名图片，加密机器id。（多个客人信息需要统一顺序）
+        public string Checkin(string orderid, string roomnum, string roomtype, string building, string roomcode,
+                              float roomrate, string checkintype, string vipcardnum, string vipcardtype,
+                              string name, string sex, string identitycardnum, int peoplenum, DateTime checkintime,
+                              DateTime checkouttime, int hours,
+                              float advancepayment, string advancetype, string macId, DateTime ordertime,
+                              List<byte[]> images, byte[] checkinimage)
+        {
+            string msg = "";
+            machine.JqId = macId;
+            DataTable ds = checkinbll.Query(machine);
+            int count = ds.Rows.Count;
+            if (count > 0)
+            {
+                CheckinInfo checkin = new CheckinInfo();
+                uploadPhoto upload = new uploadPhoto();
+                if (!string.IsNullOrEmpty(orderid) && !string.IsNullOrEmpty(roomnum) && !string.IsNullOrEmpty(roomtype) &&
+                    !string.IsNullOrEmpty(building)
+                    && !string.IsNullOrEmpty(roomcode) && roomrate != 0.0 && !string.IsNullOrEmpty(checkintype) &&
+                    !string.IsNullOrEmpty(vipcardnum)
+                    && !string.IsNullOrEmpty(vipcardtype) && !string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(sex) &&
+                    !string.IsNullOrEmpty(identitycardnum)
+                    && peoplenum != 0 && peoplenum < 3 && checkintime != null && checkouttime != null &&
+                    checkintime < checkouttime && hours >= 0 && advancepayment != 0.0
+                    && !string.IsNullOrEmpty(advancetype) && !string.IsNullOrEmpty(macId) && ordertime != null &&
+                    checkinimage.Length > 0)
+                {
+                    checkin.OrderId = orderid;
+                    checkin.RoomNum = roomnum;
+                    checkin.RoomType = roomtype;
+                    checkin.Building = building;
+                    checkin.RoomCode = roomcode;
+                    checkin.RoomRate = roomrate;
+                    checkin.CheckinType = checkintype;
+                    checkin.ViPcardNum = vipcardnum;
+                    checkin.ViPcardType = vipcardtype;
+                    checkin.PeopleNum = peoplenum;
+                    checkin.CheckinTime = checkintime;
+                    checkin.Hours = hours;
+                    checkin.AdvancePayment = advancepayment;
+                    checkin.AdvanceType = advancetype;
+                    checkin.MacId = macId;
+                    checkin.OrderTime = ordertime;
+                    int number = Convert.ToInt32(peoplenum);
+                    string[] Name = name.Split('#');
+                    string[] Sex = sex.Split('#');
+                    string[] IDcardnumber = identitycardnum.Split('#');
+                    int length_name = Name.Length;
+                    int length_ID = IDcardnumber.Length;
+                    int length_sex = Sex.Length;
+                    if (length_name != length_ID || length_ID != length_sex || length_sex != number)
+                    {
+                        msg = GetMsg(0, constant.PARAM_CHECK, "");
+                    }
+                    else
+                    {
+                        List<CustomerInfo> customList = new List<CustomerInfo>();
+                        //循环判断number个客户信息文件夹是否存在并存盘
+                        for (int i = 0; i < number; i++)
+                        {
+                            //保存客户身份信息
+                            CustomerInfo customer = new CustomerInfo();
+                            string[] IDcardpathandname =
+                                (upload.IDcardImage(macId, orderid, checkintime, IDcardnumber[i])).Split('#');
+                            //返回身份证图片保存路径
+                            string[] CMcardpathandname =
+                                (upload.CMcardImage(macId, orderid, checkintime, IDcardnumber[i])).Split('#');
+                            //返回摄像头图片保存路径
+                            string[] imagePath = (upload.checkinImage(macId, orderid, checkintime)).Split('#');
+                            //返回checkin 签名图片路径
+                            try
+                            {
+                                //File.WriteAllBytes(imagePath[0], checkinimage);//保存checkin签名图片
+                                using (MemoryStream ms = new MemoryStream(checkinimage))
+                                {
+                                    Bitmap bmp = new Bitmap(ms);
+                                    bmp.Save(imagePath[0], System.Drawing.Imaging.ImageFormat.Bmp);
+                                }
+                            }
+                            catch (Exception e)
+                            {
+                                log.Error("checkin签名图片保存失败" + e.Message);
+                                msg = GetMsg(0, constant.IMAGE_SAVE, "");
+                            }
+                            checkin.CheckinImage = imagePath[1];
+                            customer.OrderId = orderid;
+                            customer.IdentityCardNum = IDcardnumber[i];
+                            customer.Name = Name[i];
+                            customer.Sex = Sex[i];
+                            customer.IdentityCardPhoto = IDcardpathandname[1];
+                            customer.CameraPhoto = CMcardpathandname[1];
+                            customList.Add(customer);
+                            byte[] IDimage = null;
+                            byte[] Cimage = null;
+                            if (null != images && images.Count > 0)
+                            {
+                                if (null != images[i])
+                                {
+                                    IDimage = images[i];
+                                }
+                                if (null != images[i + 1] && number == 1)
+                                {
+                                    Cimage = images[i + 1];
+                                }
+                                if (number > 1)
+                                {
+                                    if (null != images[i + 2])
+                                    {
+                                        Cimage = images[i + 2];
+                                    }
+                                }
+                                try
+                                {
+                                    //File.WriteAllBytes(IDcardpathandname[0], IDimage);//保存身份证图片
+                                    using (MemoryStream ms = new MemoryStream(IDimage))
+                                    {
+                                        Bitmap bmp = new Bitmap(ms);
+                                        bmp.Save(IDcardpathandname[0], System.Drawing.Imaging.ImageFormat.Bmp);
+                                    }
+                                }
+                                catch (Exception e)
+                                {
+                                    log.Error("checkin图片保存失败" + e.Message);
+                                    //Msg = getMsg(0, constant.IMAGE_SAVE, "");
+                                }
+                                try
+                                {
+                                    //File.WriteAllBytes(CMcardpathandname[0], Cimage);//保存摄像头图片
+                                    using (MemoryStream ms = new MemoryStream(Cimage))
+                                    {
+                                        Bitmap bmp = new Bitmap(ms);
+                                        bmp.Save(CMcardpathandname[0], System.Drawing.Imaging.ImageFormat.Bmp);
+                                    }
+                                }
+                                catch (Exception e)
+                                {
+                                    log.Error("checkin图片保存失败" + e.Message);
+                                    //Msg = getMsg(0, constant.IMAGE_SAVE, "");
+                                }
+                            }
+
+                        }
+                        try
+                        {
+                            bool flag = this.checkinbll.UploadCheckin(checkin, customList);
+                            if (flag == true)
+                            {
+                                msg = GetMsg(1, "", "");
+                            }
+                            else
+                            {
+                                msg = GetMsg(0, constant.ORDER_SAVE, "");
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            log.Error("checkin订单信息保存出错" + e.Message);
+                        }
+                    }
+                }
+                else
+                {
+                    msg = GetMsg(0, constant.PARAM_CHECK, "");
+                }
+                return msg;
+            }
+            else
+            {
+                return GetMsg(0, constant.CHECK_CODE, "");
+            }
+        }
+
+
+
+
+        /// <summary>
+        /// 终端在接收返回结果时需要判断是否为null，是否有值，为null则认为无效；无值，则认为验证码已使用。
+        /// </summary>
+        /// <param name="checkno"></param>
+        /// <param name="tgsid"></param>
+        /// <returns></returns>
+        [WebMethod]
+        public QueryNoAndPj QueryCheckNo(string checkno, string tgsid, string macId)
+        {
+            CheckNoInfo cni = new CheckNoInfo()
+                {
+                    CheckId = checkno,
+                    InternetGroupId = tgsid,
+                    HotelId = _authen.sob_Hotel_Id,
+                };
+
+            DataTable dtCheckNo = _checkNoBll.QueryCheckNo(cni); //查询验证码表
+            var machinCheck = 0;
+            if (dtCheckNo != null && dtCheckNo.Rows.Count > 0) //验证码存在
+            {
+                machinCheck = int.Parse(dtCheckNo.Rows[0]["machinecheck"].ToString());
+            }
+            else
+            {
+                throw new BusinessException("验证码不存在。");
+            }
+            if (machinCheck == 2) //验证码存在，并且有终端验证状态
+            {
+                DataTable dt1 = _checkNoBll.QueryCheckNoIsKnock(new CheckNoInfo() { CheckId = checkno });
+                if (dt1 != null && dt1.Rows.Count > 0) //锁定表有记录，说明该验证码正在锁定房间。
+                {
+                    RoomBll rb = new RoomBll();
+                    DataTable dtRoomLockInfo = rb.Query(new RoomInfo()
+                        {
+                            RoomNum = dt1.Rows[0]["roomnum"].ToString(),
+                            HotelId = dt1.Rows[0]["hotelid"].ToString()
+                        });
+                    if (dtRoomLockInfo != null && dtRoomLockInfo.Rows.Count > 0)
+                    {
+                        var tmp = dtCheckNo.Rows[0]["checkidbegintime"].ToString();
+                        var cibt = tmp.Length > 0 ? tmp : DateTime.MinValue.ToString("yyyy-MM-dd HH:mm:ss");
+                        tmp = dtCheckNo.Rows[0]["checkidintime"].ToString();
+                        var ciit = tmp.Length > 0 ? tmp : DateTime.MinValue.ToString("yyyy-MM-dd HH:mm:ss");
+                        return new QueryNoAndPj()
+                            {
+                                Building = dtRoomLockInfo.Rows[0]["building"].ToString(),
+                                Floor = dtRoomLockInfo.Rows[0]["floor"].ToString(),
+                                RoomTypeName = dtRoomLockInfo.Rows[0]["roomtype"].ToString(),
+                                RoomNum = dtRoomLockInfo.Rows[0]["roomnum"].ToString(),
+                                InSumDate = int.Parse(dtCheckNo.Rows[0]["insumdate"].ToString()),
+                                CheckIdBeginTime = DateTime.Parse(cibt),
+                                CheckIdEndTime = DateTime.Parse(ciit),
+                            };
+                    }
+                    else
+                    {
+                        log.Error("获取房间信息出错:锁定表有记录，但房间表没有对应记录。");
+                        throw new BusinessException("获取房间信息出错。");
+                    }
+                }
+                else //锁定表没有记录，说明验证码已使用
+                {
+                    throw new BusinessException("验证码已使用。");
+                }
+            }
+            else //没有终端验证状态
+            {
+                //从PMS取空闲房间信息，并设置锁定（终端、后台、PMS）
+                var checkIdFront = dtCheckNo.Rows[0]["checkid_front"].ToString();
+                var internetGroupId = dtCheckNo.Rows[0]["internetgroupid"].ToString();
+                DataTable dtProject = Igroupbll.QueryProject(new InternetGroupInfo()
+                    {
+                        ProjectFrontNum = checkIdFront,
+                        InternetGroupId = internetGroupId
+                    });
+
+                if (dtProject == null || dtProject.Rows.Count <= 0)
+                {
+                    throw new BusinessException("查询房间类型信息出错。");
+                }
+                PMSInterface pms = new PMSClass();
+                //查询可用房间。
+                string requestId = "2131";
+                AvailRooms ar = pms.get_avail_room_list(requestId, _authen, dtProject.Rows[0]["roomtypeid"].ToString(),
+                                                        DateTime.Now.ToString("yyyy-MM-dd"),
+                                                        DateTime.Now.ToString("yyyy-MM-dd"));
+                if (ar.avail_Room_List.Count > 0)
+                {
+                    Room r = ar.avail_Room_List[0];
+                    var tmp = dtCheckNo.Rows[0]["CheckIdBeginTime"].ToString();
+                    var checkIdBeginTime = tmp.Length > 0 ? DateTime.Parse(tmp) : DateTime.MinValue;
+                    tmp = dtCheckNo.Rows[0]["checkIdEndtime"].ToString();
+                    var checkIdEndTime = tmp.Length > 0 ? DateTime.Parse(tmp) : DateTime.MinValue;
+                    //在PMS，后台锁定房间
+
+                    VoidReturn voidReturn = pms.lock_room(requestId, _authen, r.room_No, "true");//在PMS锁定房间
+                    log.Info("锁定PMS房间，返回内容：" + voidReturn.return_Info);
+
+                    _roomLockBll.AddRoomLock(new RoomLockInfo()//在后台锁定房间
+                        {
+                            HotelId = _authen.sob_Hotel_Id,
+                            CheckId = checkno,
+                            LockTime = DateTime.Now,
+                            MacId = macId,
+                            RoomNum = r.room_No,
+                        });
+                    _checkNoBll.Modify(new CheckNoInfo()
+                        {
+                            CheckId = checkno,
+                            MachineCheck = 2,
+                        });
+                    //返回房间信息
+                    return new QueryNoAndPj()
+                        {
+                            InSumDate = int.Parse(dtCheckNo.Rows[0]["insumdate"].ToString()),
+                            CheckIdBeginTime = checkIdBeginTime,
+                            CheckIdEndTime = checkIdEndTime,
+                            Building = r.room_Building_Id,
+                            Floor = r.room_Floor_Id,
+                            RoomTypeName = r.room_Type_Id,
+                            RoomNum = r.room_No,
+                            Towards = r.room_Direction_Id,
+                            ProjectName = dtProject.Rows[0]["projectname"].ToString(),
+                        };
+                }
+                else
+                {
+                    throw new BusinessException("无可用房间。");
+                }
+            }
+        }
+    }
+}

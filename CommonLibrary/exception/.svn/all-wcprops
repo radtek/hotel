@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/selfcheckin/!svn/ver/358/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/exception
+END
+SendRequestException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/selfcheckin/!svn/ver/345/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/exception/SendRequestException.cs
+END
+AnalysisXmlException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/selfcheckin/!svn/ver/345/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/exception/AnalysisXmlException.cs
+END
+CreateXmlException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/selfcheckin/!svn/ver/345/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/exception/CreateXmlException.cs
+END
+PMSResponseErrException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/345/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/exception/PMSResponseErrException.cs
+END
+BusinessException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/selfcheckin/!svn/ver/358/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/exception/BusinessException.cs
+END

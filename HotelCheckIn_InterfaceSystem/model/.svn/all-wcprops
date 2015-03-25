@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/selfcheckin/!svn/ver/851/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model
+END
+AvailRooms.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/AvailRooms.cs
+END
+Room.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/selfcheckin/!svn/ver/821/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/Room.cs
+END
+ArrivingList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/ArrivingList.cs
+END
+RegistBack.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/RegistBack.cs
+END
+OrderRegister.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/OrderRegister.cs
+END
+Bill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/Bill.cs
+END
+Register.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/Register.cs
+END
+RoomRateList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/RoomRateList.cs
+END
+CardInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/CardInfo.cs
+END
+AuthenToken.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/821/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/AuthenToken.cs
+END
+Allocation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/Allocation.cs
+END
+Guest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/selfcheckin/!svn/ver/851/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/Guest.cs
+END
+CardDetailList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/CardDetailList.cs
+END
+RoomRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/RoomRate.cs
+END
+RegistList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/RegistList.cs
+END
+ReturnInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/ReturnInfo.cs
+END
+CardDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/CardDetail.cs
+END
+DM.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/DM.cs
+END
+ClockRoomRateList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/ClockRoomRateList.cs
+END
+RegisterInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/RegisterInfo.cs
+END
+VoidReturn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/VoidReturn.cs
+END
+ClockRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/ClockRate.cs
+END
+RoomList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/RoomList.cs
+END
+RegistAccount.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/selfcheckin/!svn/ver/332/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/model/RegistAccount.cs
+END

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="IHeartBeat_Pt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="para" type="tns:HearBeatPara" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="HearBeatPara">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MachineId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FalutId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NowDt" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="IHeartBeat_PtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IHeartBeat_PtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IHeartBeat_PtSoapIn">
+    <wsdl:part name="parameters" element="tns:IHeartBeat_Pt" />
+  </wsdl:message>
+  <wsdl:message name="IHeartBeat_PtSoapOut">
+    <wsdl:part name="parameters" element="tns:IHeartBeat_PtResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HeartBeatUploadSoap">
+    <wsdl:operation name="IHeartBeat_Pt">
+      <wsdl:input message="tns:IHeartBeat_PtSoapIn" />
+      <wsdl:output message="tns:IHeartBeat_PtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HeartBeatUploadSoap" type="tns:HeartBeatUploadSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IHeartBeat_Pt">
+      <soap:operation soapAction="http://tempuri.org/IHeartBeat_Pt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HeartBeatUploadSoap12" type="tns:HeartBeatUploadSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IHeartBeat_Pt">
+      <soap12:operation soapAction="http://tempuri.org/IHeartBeat_Pt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HeartBeatUpload">
+    <wsdl:port name="HeartBeatUploadSoap" binding="tns:HeartBeatUploadSoap">
+      <soap:address location="http://192.168.1.155:8013/DataService/WebService/Interface/HeartBeatUpload.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HeartBeatUploadSoap12" binding="tns:HeartBeatUploadSoap12">
+      <soap12:address location="http://192.168.1.155:8013/DataService/WebService/Interface/HeartBeatUpload.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

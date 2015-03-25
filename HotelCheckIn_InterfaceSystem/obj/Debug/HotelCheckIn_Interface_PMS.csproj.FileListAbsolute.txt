@@ -1,0 +1,10 @@
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\bin\Debug\HotelCheckIn_InterfaceSystem.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\bin\Debug\HotelCheckIn_InterfaceSystem.pdb
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\bin\Debug\CommonLibrary.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\bin\Debug\log4net.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\bin\Debug\YOUO.Framework.DataAccess.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\bin\Debug\MySql.Data.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\bin\Debug\CommonLibrary.pdb
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\obj\Debug\HotelCheckIn_Interface_PMS.csprojResolveAssemblyReference.cache
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\obj\Debug\HotelCheckIn_InterfaceSystem.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InterfaceSystem\obj\Debug\HotelCheckIn_InterfaceSystem.pdb

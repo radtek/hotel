@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+	<!--团购网站列表：名称1#图片地址1;名称2#图片地址2，无默认值-->
+	<node key="tg" value="美团网#/Images/美团logo.png;拉手网#/Images/拉手logo.png"/>
+	<!--心跳时间间隔，间隔（毫秒），默认：60000-->
+	<node key="xttime" value="60000"/>
+	<!--团购密钥长度，默认12-->
+	<node key="keylenght" value="12"/>
+	<!--素材url:默认:http://www.youotech.com-->
+	<node key="scurl" value="http://www.niuhuhu.com/hotel-theme.php?id=39619"/>
+	<!--机器ID，默认：1-->
+	<node key="macid" value="001" />
+	<!--机器密码：默认：12345678-->
+	<node key="password" value="2"/>
+	<!--界面操作超时，单位：秒（s），默认：100-->
+	<node key="timeout" value="100" />
+	<!--酒店ID，默认：00000-->
+	<node key="sobhotelid" value="sjgj" />
+	<!--人脸识别时间限制，默认：30-->
+	<node key="checkfacetimeout" value="30"/>
+	<!--VideoImagePath摄像头截图存放位置,默认：C:\\head.bmp-->
+	<node key="VideoImagePath" value="C:\\head.bmp"/>
+	<!--终端配置IP,默认：127.0.0.1-->
+	<node key="ip" value="127.0.0.1"/>
+	<!--入钞端口，默认：4930-->
+	<node key="rcport" value="4930"/>
+	<!--出钞端口，默认：4950-->
+	<node key="ccport" value="4950"/>
+	<!--出钞COM端口，默认：com4-->
+	<node key="ccComPort" value="com4"/>
+	<!--硬币COM端口，默认：com5-->
+	<node key="coinsCom" value="com5"/>
+	<!--自动发卡器端口，走卡不写卡，默认：com2-->
+	<node key="lockroomcom" value="com2"/>
+	<!--LED端口，默认：com7,灯序：1入钞，2发卡，3银联，4出钞-->
+	<node key="ledcom" value="com7"/>
+	<!--入钞Com端口，默认：com1-->
+	<node key="intonotesCom" value="com3"/>
+	<!-- 出钞 文件夹和文件名 -->
+	<node key="outmoney_filefolder" value="C:\Program Files\Vinsky\BD_Bridge\"/>
+	<node key="outmoney_filefolder_name" value="BD_Bridge"/>
+	<!--押金，默认：100-->
+	<node key="rate" value="100"></node>
+	<!--身份证读卡器类型，默认：P1-->
+	<node key="readcardtype" value="p1"></node>
+  <!--门禁系统数据库所在服务器名称-->
+  <node key="lock_server" value="192.168.10.140" />
+  <!--门锁设备COM口，写卡不走卡，默认4-->
+  <node key="lock_port" value="4" />
+
+
+	<!--以上配置都有默认值，可以删除配置节点-->
+	<node key="sob_hotelgroup_id" value="" />
+	<node key="sob_code" value="www.test.com" />
+	<node key="sob_password" value="111111" />
+	<node key="locale" value="zh_CN" />
+	<node key="ClientSettingsProvider.ServiceUri" value="" />
+	<node key="rate_code" value="USER" />
+</settings>

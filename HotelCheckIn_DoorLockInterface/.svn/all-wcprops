@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_DoorLockInterface
+END
+DoorLockInterface.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_DoorLockInterface/DoorLockInterface.cs
+END
+DoorLockClass.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_DoorLockInterface/DoorLockClass.cs
+END
+DoorLockFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_DoorLockInterface/DoorLockFactory.cs
+END
+HotelCheckIn_Interface_DoorLock.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_DoorLockInterface/HotelCheckIn_Interface_DoorLock.csproj
+END

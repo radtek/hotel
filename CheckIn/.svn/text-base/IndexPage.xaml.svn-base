@@ -1,0 +1,21 @@
+﻿<Page x:Class="CheckIn.IndexPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="1024" d:DesignWidth="1280"
+	Title="IndexPage">
+    <Page.Background>
+        <ImageBrush ImageSource="/Images/背景图.jpg"  Stretch="Fill"></ImageBrush>
+    </Page.Background>
+    <DockPanel Loaded="Grid_Loaded">
+        <Canvas Height="70" DockPanel.Dock="Bottom" >
+            <Label Canvas.Left="200" Canvas.Top="5" FontFamily="黑体" FontSize="31" Foreground="Red" Height="50" Name="labelMsg"  HorizontalContentAlignment="Center"></Label>
+            <Button Name="BtnInsk"  Style="{StaticResource Checkinsk-Style}" Width="140" Height="80" Canvas.Right="304" Canvas.Top="0" Click="BtnInsk_Click"></Button>
+            <Button Name="BtnIn" Click="BtnIn_OnClick" Style="{StaticResource Checkin-Style}" Width="140" Height="80" Canvas.Right="152" Canvas.Top="0"></Button>
+            <Button Name="BtnOut" Click="BtnOut_OnClick" Style="{StaticResource Checkout-Style}"  Width="140" Height="80" Canvas.Right="0" ></Button>
+        </Canvas>
+        <WebBrowser Name="FramWeb" DockPanel.Dock="Top" />
+    </DockPanel>
+</Page>

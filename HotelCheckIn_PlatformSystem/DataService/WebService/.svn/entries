@@ -1,0 +1,85 @@
+10
+
+dir
+967
+https://subversion.assembla.com/svn/selfcheckin/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/WebService
+https://subversion.assembla.com/svn/selfcheckin
+
+
+
+2014-02-14T02:16:57.705440Z
+684
+zhangwei0808
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0de1a0f9-1873-4d33-9ffc-f103c452dac5
+
+Main
+dir
+
+Roles
+dir
+
+UpgradeFile
+dir
+
+Common
+dir
+
+Account
+dir
+
+Material
+dir
+
+Hotels
+dir
+
+Interface
+dir
+
+Role
+dir
+
+Files
+dir
+
+SwfUpload
+dir
+
+Machine
+dir
+
+ChangePassword
+dir
+
+ZTreeService
+dir
+
+Fault
+dir
+
+ZtreeRole
+dir
+
+Hotel
+dir
+
+UpgradeMachine
+dir
+
+UseRole
+dir
+

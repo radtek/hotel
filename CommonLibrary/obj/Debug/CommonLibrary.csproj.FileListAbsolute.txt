@@ -1,0 +1,7 @@
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CommonLibrary\bin\Debug\CommonLibrary.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CommonLibrary\bin\Debug\CommonLibrary.pdb
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CommonLibrary\bin\Debug\log4net.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CommonLibrary\bin\Debug\YOUO.Framework.DataAccess.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CommonLibrary\bin\Debug\MySql.Data.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CommonLibrary\obj\Debug\CommonLibrary.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CommonLibrary\obj\Debug\CommonLibrary.pdb

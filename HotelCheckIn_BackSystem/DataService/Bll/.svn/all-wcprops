@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/selfcheckin/!svn/ver/924/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll
+END
+MenuPowerBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/924/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/MenuPowerBll.cs
+END
+GetPage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/GetPage.cs
+END
+ConvertToJson.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/ConvertToJson.cs
+END
+RoomQualityBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/selfcheckin/!svn/ver/394/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/RoomQualityBll.cs
+END
+RoomLockBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/selfcheckin/!svn/ver/817/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/RoomLockBll.cs
+END
+ConvertHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/ConvertHelper.cs
+END
+Message.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/Message.cs
+END
+EmployerBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/EmployerBll.cs
+END
+SettleBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/417/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/SettleBll.cs
+END
+ZwJson.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/371/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/ZwJson.cs
+END
+UseRolesBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/UseRolesBll.cs
+END
+RoleBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/RoleBll.cs
+END
+IoJournalBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/614/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/IoJournalBll.cs
+END
+DepartmentBLL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/DepartmentBLL.cs
+END
+CheckinBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/901/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/CheckinBll.cs
+END
+InternetGroupBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/selfcheckin/!svn/ver/875/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/InternetGroupBll.cs
+END
+BaseBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/BaseBll.cs
+END
+CheckNoBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/544/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/CheckNoBll.cs
+END
+PayStyleBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/selfcheckin/!svn/ver/852/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/PayStyleBll.cs
+END
+RoomBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/340/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/RoomBll.cs
+END
+DataPage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/selfcheckin/!svn/ver/379/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/DataPage.cs
+END
+ResMenuBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Bll/ResMenuBll.cs
+END

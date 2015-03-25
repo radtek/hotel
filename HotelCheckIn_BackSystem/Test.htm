@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script language="javascript" type="text/javascript">
+         //用javascript进行声音播放控制
+//        function ManageSoundControl(action) {
+//            var soundControl = document.getElementById("soundControl");
+//            if (action == "play") {
+//                soundControl.src = "笑忘书.mp3";
+//            }
+//            if (action == "stop") {
+//                soundControl.src = "";
+//            }
+//        }
+
+        var g_current_url = "";
+        function start_player(url) {
+            var player = document.getElementByIdx("MediaPlayer1");
+
+            if (g_current_url != url) {
+                player.URL = url;
+                player.controls.play();
+                g_current_url = url;
+            }
+            else {
+                player.controls.play();
+            }
+
+        }
+        function pause_player() {
+            var player = document.getElementByIdx("MediaPlayer1");
+            player.controls.pause();
+        }
+
+
+    </script>
+
+</head>
+    <body>
+        <object id="MediaPlayer1" width="0" height="0" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6"
+                codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6.4.5.715"
+                align="baseline" border="0" standby="Loading Microsoft Windows Media Player components..."
+                type="application/x-oleobject">
+            <param name="invokeURLs" value="0">
+            <param name="autostart" value="1">
+            <param name="SRC" value="笑忘书.mp3">
+        </object>
+        <input id="btPlay" type="button" value="播放" onclick="start_player()" />
+        <input id="btStop" type="button" value="停止" onclick="pause_player()" />
+        <!--<form id="form1" runat="server">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <bgsound id="soundControl" src="" loop="-1"></bgsound>
+                        <input id="btPlay" type="button" value="播放" onclick="ManageSoundControl('play')" />
+                        <input id="btStop" type="button" value="停止" onclick="ManageSoundControl('stop')" />
+                    </td>
+                </tr>         
+            </table>
+        </form>-->
+    </body>
+</html>

@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>机器管理</title>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <script type="text/javascript" src="../../DataService/WebService/Common/Common.ashx?action=isoverdue"></script>
+    <link rel="stylesheet" type="text/css" href="../../Scripts/jquery-easyui-1.3.1/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="../../Scripts/jquery-easyui-1.3.1/themes/icon.css" />
+    <link href="../../Scripts/My97DatePicker/skin/whyGreen/datepicker.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/Style.css" />
+    <link href="Machine.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery.easyui.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+    <script src="../../Scripts/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/easyui-validate.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-easyui-1.3.1/jquery.form.js" type="text/javascript"></script>
+    <script src="MachineManage.js" type="text/javascript"></script>
+</head>
+<body class="easyui-layout">
+    <div data-options="region:'center',title:'机器管理>>机器管理'">
+        <table id="dg_machine">
+        </table>
+    </div>
+    <div id="tb" style="padding: 5px; height: 30px;">
+        <div style="margin-bottom: 5px; float: left;">
+            <table>
+                <tr style="text-align: right; width: 400px;">
+                    <td class="td-width">
+                        区域：
+                    </td>
+                    <td>
+                        <select id="selAreas" onchange="selAreas_onchange('1')">
+                        </select>
+                    </td>
+                    <td class="td-width">
+                        酒店：
+                    </td>
+                    <td>
+                        <select id="selHotels">
+                        </select>
+                    </td>
+                    <td id="tdRight">
+                        <a onclick="query_click()" class="easyui-linkbutton" plain="true" iconcls="icon-search">
+                            查 询</a>
+                    </td>
+                    <td>
+                        <a onclick="add_click('add')" class="easyui-linkbutton" plain="true" iconcls="icon-add">
+                            添 加</a>
+                    </td>
+                    <td>
+                        <a onclick="edit_click('edit')" class="easyui-linkbutton" plain="true" iconcls="icon-edit">
+                            修 改</a>
+                    </td>
+                    <td>
+                        <a onclick="del_click()" class="easyui-linkbutton" plain="true" iconcls="icon-remove">
+                            删 除</a>
+                    </td>
+                    <td>
+                        <a onclick="selectMaterial_click()" class="easyui-linkbutton" plain="true" iconcls="icon-upload">
+                            选择素材文件</a>
+                    </td>
+                    <td>
+                        <a onclick="selectUpgrade_click()" class="easyui-linkbutton" plain="true" iconcls="icon-upload">
+                            选择升级文件</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="dlg" class="easyui-dialog">
+        <div id="materialurl">
+            请输入素材地址:<input id="txtUrl" /></div>
+        <div style="margin: 0; padding: 0 1px; height: 345px;">
+            <table id="dg_material">
+            </table>
+        </div>
+    </div>
+    <div id="dlg_upgrade" class="easyui-dialog">
+        <div style="margin: 0; padding: 1px 1px; height: 402px;">
+            <table id="dg_upgrade">
+            </table>
+        </div>
+    </div>
+    <div id="dlg_form" class="easyui-dialog">
+        <form name="documentForm" method="post" id="documentForm">
+        <div class="tableForm">
+            <table border="1" style="border: 1px solid #dcdcdc;" cellspacing="1" cellpadding="1">
+                <tr class="tr">
+                    <td class="td">
+                        区域:
+                    </td>
+                    <td class="td-input">
+                        <select name="selAreas2" id="selAreas2" onchange="selAreas_onchange('2')" class="easyui-validatebox"
+                            data-options="required:true">
+                        </select>
+                    </td>
+                    <td class="redstart">
+                        *
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td">
+                        酒店:
+                    </td>
+                    <td class="td-input">
+                        <select name="selHotels2" id="selHotels2" class="easyui-validatebox" data-options="required:true">
+                        </select>
+                    </td>
+                    <td class="redstart">
+                        *
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td">
+                        机器id:
+                    </td>
+                    <td class="td-input">
+                        <input name="txt_jqid" id="txt_jqid" type="text" class="easyui-validatebox txt" data-options="required:true" />
+                    </td>
+                    <td class="redstart">
+                        *
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td">
+                        名称:
+                    </td>
+                    <td class="td-input">
+                        <input name="txt_name" id="txt_name" type="text" class="easyui-validatebox txt" required="true" validtype="name" />
+                    </td>
+                    <td class="redstart">
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td">
+                        密码:
+                    </td>
+                    <td class="td-input">
+                        <input name="txt_pass" id="txt_pass" type="password" class="easyui-validatebox txt"
+                            data-options="required:true" />
+                    </td>
+                    <td class="redstart">
+                        *
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td">
+                        IP:
+                    </td>
+                    <td class="td-input">
+                        <input name="txt_ip" id="txt_ip" type="text" class="easyui-validatebox txt" validtype="ip"/>
+                    </td>
+                    <td class="redstart">
+                    </td>
+                </tr>
+                 <tr class="tr">
+                    <td class="td">
+                        是否可用:
+                    </td>
+                    <td class="td-input">
+                        <input name="txt_disabled" type="radio" value="1">是</input>
+                        <input name="txt_disabled" type="radio" value="2">否</input>
+                    </td>
+                    <td class="redstart">
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="td">
+                        备注:
+                    </td>
+                    <td class="td-input">
+                        <textarea name="txt_note" id="txt_note" cols="26" rows="4">
+                    </textarea>
+                    </td>
+                    <td class="redstart">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

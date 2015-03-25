@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/selfcheckin/!svn/ver/675/trunk/HotelCheckIn/HotelCheckIn/CheckIn/UserControls
+END
+CheckInStep.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/selfcheckin/!svn/ver/675/trunk/HotelCheckIn/HotelCheckIn/CheckIn/UserControls/CheckInStep.xaml
+END
+NumKeyBoard.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/selfcheckin/!svn/ver/207/trunk/HotelCheckIn/HotelCheckIn/CheckIn/UserControls/NumKeyBoard.xaml
+END
+CheckOutStep.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/selfcheckin/!svn/ver/163/trunk/HotelCheckIn/HotelCheckIn/CheckIn/UserControls/CheckOutStep.xaml
+END
+CheckInStep.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/selfcheckin/!svn/ver/675/trunk/HotelCheckIn/HotelCheckIn/CheckIn/UserControls/CheckInStep.xaml.cs
+END
+NumKeyBoard.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/selfcheckin/!svn/ver/207/trunk/HotelCheckIn/HotelCheckIn/CheckIn/UserControls/NumKeyBoard.xaml.cs
+END
+CheckOutStep.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/selfcheckin/!svn/ver/163/trunk/HotelCheckIn/HotelCheckIn/CheckIn/UserControls/CheckOutStep.xaml.cs
+END

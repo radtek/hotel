@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/selfcheckin/!svn/ver/956/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal
+END
+EmployerDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/selfcheckin/!svn/ver/128/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/EmployerDal.cs
+END
+HotelsDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/381/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/HotelsDal.cs
+END
+HeartBeatDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/376/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/HeartBeatDal.cs
+END
+SettleDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/480/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/SettleDal.cs
+END
+UseRolesDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/selfcheckin/!svn/ver/128/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/UseRolesDal.cs
+END
+RoleDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/128/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/RoleDal.cs
+END
+IoJournalDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/648/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/IoJournalDal.cs
+END
+DepartmentDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/selfcheckin/!svn/ver/128/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/DepartmentDal.cs
+END
+MachineDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/690/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/MachineDal.cs
+END
+CheckinDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/956/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/CheckinDal.cs
+END
+TradingInfoDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/selfcheckin/!svn/ver/929/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/TradingInfoDal.cs
+END
+InternetGroupDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/selfcheckin/!svn/ver/875/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/InternetGroupDal.cs
+END
+DetectDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/745/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/DetectDal.cs
+END
+CodeDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/385/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/CodeDal.cs
+END
+CheckNoDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/880/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/CheckNoDal.cs
+END
+BaseDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/BaseDal.cs
+END
+PayStyleDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/selfcheckin/!svn/ver/852/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/PayStyleDal.cs
+END
+FaultDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/selfcheckin/!svn/ver/385/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/FaultDal.cs
+END
+RoomDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/791/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/RoomDal.cs
+END
+ResMenuDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/128/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/ResMenuDal.cs
+END
+MenuPowerDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/924/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/MenuPowerDal.cs
+END
+mysql.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/selfcheckin/!svn/ver/62/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/mysql.cs
+END
+RoomLockDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/selfcheckin/!svn/ver/819/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/RoomLockDal.cs
+END
+RoomQualityDal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/selfcheckin/!svn/ver/791/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Dal/RoomQualityDal.cs
+END

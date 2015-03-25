@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/selfcheckin/!svn/ver/949/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/PMS
+END
+InvokeBaseData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/788/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/PMS/InvokeBaseData.cs
+END
+PmsService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/949/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/PMS/PmsService.cs
+END
+InvokeResultData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/788/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/PMS/InvokeResultData.cs
+END
+PmsEnum.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/selfcheckin/!svn/ver/890/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/PMS/PmsEnum.cs
+END
+PmsDataService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/949/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/PMS/PmsDataService.cs
+END

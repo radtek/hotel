@@ -1,0 +1,92 @@
+10
+
+dir
+957
+https://subversion.assembla.com/svn/selfcheckin/trunk/HotelCheckIn/HotelCheckIn
+https://subversion.assembla.com/svn/selfcheckin
+
+
+
+2014-08-07T10:51:48.375188Z
+957
+liandlei987
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0de1a0f9-1873-4d33-9ffc-f103c452dac5
+
+HotelCheckIn
+dir
+
+CheckIn
+dir
+
+HotelCheckIn_BackSystem
+dir
+
+HotelCheckIn_InterfaceSystem
+dir
+
+WindowsFormsApplication3
+dir
+
+HotelCheckIn_InternetInterface
+dir
+
+HotelCheckIn_PlatformSystem
+dir
+
+HotelCheckIn.sln
+file
+
+
+
+
+2013-12-20T07:02:51.868474Z
+edf5f8259f0dbd5e62fd35c7d3ae57f4
+2013-12-17T08:06:05.128345Z
+463
+xiazhen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9081
+
+CommonLibrary
+dir
+
+HotelCheckIn_DoorLockInterface
+dir
+
+HotelCheckIn_Interface_Hardware
+dir
+

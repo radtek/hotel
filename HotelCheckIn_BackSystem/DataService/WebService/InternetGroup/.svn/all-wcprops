@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/selfcheckin/!svn/ver/875/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/InternetGroup
+END
+CheckNoService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/selfcheckin/!svn/ver/753/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/InternetGroup/CheckNoService.ashx.cs
+END
+SettleService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/selfcheckin/!svn/ver/408/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/InternetGroup/SettleService.ashx
+END
+IoJournalService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/selfcheckin/!svn/ver/347/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/InternetGroup/IoJournalService.ashx
+END
+InternetGroup.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/selfcheckin/!svn/ver/179/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/InternetGroup/InternetGroup.ashx
+END
+SettleService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/selfcheckin/!svn/ver/753/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/InternetGroup/SettleService.ashx.cs
+END
+IoJournalService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/selfcheckin/!svn/ver/753/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/InternetGroup/IoJournalService.ashx.cs
+END
+InternetGroup.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/selfcheckin/!svn/ver/875/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/InternetGroup/InternetGroup.ashx.cs
+END
+CheckNoService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/selfcheckin/!svn/ver/208/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/InternetGroup/CheckNoService.ashx
+END

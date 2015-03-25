@@ -1,0 +1,4 @@
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_DoorLockInterface\bin\Debug\HotelCheckIn_DoorLockInterface.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_DoorLockInterface\bin\Debug\HotelCheckIn_DoorLockInterface.pdb
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_DoorLockInterface\obj\Debug\HotelCheckIn_DoorLockInterface.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_DoorLockInterface\obj\Debug\HotelCheckIn_DoorLockInterface.pdb

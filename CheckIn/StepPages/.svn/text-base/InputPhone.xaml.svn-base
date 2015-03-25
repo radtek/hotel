@@ -1,0 +1,44 @@
+﻿<Page x:Class="CheckIn.StepPages.InputPhone"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:CheckIn.UserControls"
+      mc:Ignorable="d" d:DesignHeight="1024" d:DesignWidth="1280"
+	Title="InputPhone" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit">
+    <Page.Background>
+        <ImageBrush ImageSource="../Images/背景图.jpg"  Stretch="Fill"></ImageBrush>
+    </Page.Background>
+    <Grid Unloaded="Grid_Unloaded" Loaded="Grid_Loaded">
+        <local:CheckInStep Height="580" Margin="117,192,0,0" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="Step"></local:CheckInStep>
+        <Canvas Height="52" HorizontalAlignment="Right" Name="canvas1" VerticalAlignment="Top" Width="246.658">
+            <Label Canvas.Left="0" Canvas.Top="9" FontFamily="微软雅黑" FontSize="25" Foreground="Black" Height="39" Name="label3" Width="157">操作倒计时：</Label>
+            <Label Canvas.Left="157" Canvas.Top="13" FontFamily="Times New Roman" FontSize="25" Foreground="Red" Height="37" Name="labelNum" Width="47"></Label>
+            <Label Canvas.Left="199.658" Canvas.Top="9" FontFamily="微软雅黑" FontSize="25" Foreground="Red" Height="39" Name="label5" Width="44">秒</Label>
+        </Canvas>
+        <local:NumKeyBoard Height="327" x:Name="keyboard" Margin="833,317,200,407" />
+        <Label FontFamily="微软雅黑" FontSize="30" Foreground="#FF0000" Height="67" Margin="306,0,301,250" Name="labelMsg" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" ></Label>
+        <Button Name="Pre" Margin="450,817,630,117" Style="{StaticResource LastButton-Style}" Click="Pre_Click"></Button>
+        <Button Name="Next" Margin="655,817,425,117" Style="{StaticResource NextButton-Style}" Click="Next_Click"></Button>
+        <Button Name="Back" Margin="860,817,220,117" Style="{StaticResource BackButton-Style}" Click="Back_Click"></Button>
+        <Label Content="请输入手机号：" FontFamily="微软雅黑" FontSize="35" Height="55" Margin="437,273,543,696" Width="300" />
+        <Label Content="退房时间：" FontFamily="微软雅黑" FontSize="35" Height="55" Margin="437,515,543,454" Width="300" />
+        <Label Content="入住时间:" FontFamily="微软雅黑" FontSize="35" Height="55" Margin="437,400,543,569" Width="300" />
+        <TextBox Margin="437,351,562,625" Name="tbPhone" Style="{StaticResource TextBoxStyle}" TextChanged="tbPhone_TextChanged" MouseEnter="tbPhone_MouseEnter" />
+        <TextBox Margin="437,461,758,515" Name="TbCheckinYear" IsEnabled="False" Style="{StaticResource TextBoxStyle}" HorizontalContentAlignment="Right" TextChanged="TbCheckYear_TextChanged"/>
+        <TextBox Margin="571,461,656,515" Name="TbCheckinMonth" IsEnabled="False" Style="{StaticResource TextBoxStyle}" HorizontalContentAlignment="Right" TextChanged="TbCheckMonthDay_TextChanged"/>
+        <TextBox Margin="692,460,536,516" Name="TbCheckinDay" IsEnabled="False" Style="{StaticResource TextBoxStyle}" HorizontalContentAlignment="Right" TextChanged="TbCheckMonthDay_TextChanged" />
+        <Label Content="年" FontFamily="微软雅黑" FontSize="35" Height="55" Margin="522,460,711,509" />
+        <Label Content="月" FontFamily="微软雅黑" FontSize="35" Height="55" Margin="634,460,599,509" />
+        <Label Content="日" FontFamily="微软雅黑" FontSize="35" Height="55" Margin="757,459,476,510" />
+        <TextBox Margin="437,573,758,403" Name="TbCheckoutYear" Style="{StaticResource TextBoxStyle}"  HorizontalContentAlignment="Right" TextChanged="TbCheckYear_TextChanged" />
+        <TextBox Margin="571,573,656,403" Name="TbCheckoutMonth" Style="{StaticResource TextBoxStyle}" HorizontalContentAlignment="Right" TextChanged="TbCheckMonthDay_TextChanged" />
+        <TextBox Margin="692,572,536,404" Name="TbCheckoutDay" Style="{StaticResource TextBoxStyle}" HorizontalContentAlignment="Right" TextChanged="TbCheckMonthDay_TextChanged"/>
+        <Label Content="年" FontFamily="微软雅黑" FontSize="35" Height="55" Margin="522,572,711,397" />
+        <Label Content="月" FontFamily="微软雅黑" FontSize="35" Height="55" Margin="634,572,599,397" />
+        <Label Content="日" FontFamily="微软雅黑" FontSize="35" Height="55" Margin="757,569,476,400" />
+        <Label Content="当天7:30之后入住,到次日的12:00为一天。" Height="55" HorizontalAlignment="Left" Margin="436,646,0,0" Name="label1" VerticalAlignment="Top" Width="368" FontSize="16" Foreground="#F00" />
+        <Label Content="请填写正确的手机号，以防止遗留物品，酒店可以及时通知您！" Height="55" HorizontalAlignment="Left" Margin="437,172,0,0" Name="label2" VerticalAlignment="Top" Width="599" FontSize="20" Foreground="#F00" />
+        <Label Content="当前时间：" Name="LbDateTime" FontFamily="微软雅黑" FontSize="30" Height="55" Margin="40,38,730,931" />
+    </Grid>
+</Page>

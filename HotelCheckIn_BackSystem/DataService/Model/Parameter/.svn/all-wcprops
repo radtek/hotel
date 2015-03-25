@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/selfcheckin/!svn/ver/689/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Model/Parameter
+END
+InitMainGrid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/selfcheckin/!svn/ver/366/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Model/Parameter/InitMainGrid.cs
+END
+InitMachineGrid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/selfcheckin/!svn/ver/689/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Model/Parameter/InitMachineGrid.cs
+END
+HearBeatPara.cs
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/selfcheckin/!svn/ver/374/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Model/Parameter/HearBeatPara.cs
+END
+GetMachine.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/selfcheckin/!svn/ver/689/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/Model/Parameter/GetMachine.cs
+END

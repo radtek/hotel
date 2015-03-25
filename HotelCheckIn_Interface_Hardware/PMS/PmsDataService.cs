@@ -1,0 +1,412 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Newtonsoft.Json;
+using log4net;
+
+namespace HotelCheckIn_Interface_Hardware.PMS
+{
+    public class PmsDataService
+    {
+        readonly PmsService _pmsService;
+        public PmsDataService(string url)
+        {
+            _pmsService = new PmsService(url);
+        }
+        /// <summary>
+        /// 酒店入住
+        /// queryString
+        /// Q00：预留；
+        /// Q01：预留；
+        /// Q02：酒店pms编码；[要将酒店编码传给pos交易备注]
+        /// Q03：订单pms编码；(来自303的C00,为空时表示无订单的直接入住)
+        /// Q04：户型pms编码
+        /// Q05：房号；
+        /// Q06：房价码；
+        /// Q07：总房费；
+        /// Q08：入住日期#成交房价#原始房价|...；
+        /// Q09：总餐券金额；
+        /// Q10：入住日期#餐券种类 Guid#餐券数量#餐券单价|…；（免费餐券也在这里）（餐券种类
+        ///      编 Guid 都为 0，是预留字段，接口可以不考虑）
+        /// Q11：会员卡号#会员级别 PMS 编码；（空时表示非会员）
+        /// Q12：入住人姓名#证件类型（见 E11）#证件号#民族（文本）#性别（男性|女性|未知）
+        ///     #住址#出生日期（yyyy-M-d）#姓名全拼|…；（第一个入住人是主入住人）
+        /// Q13：手机号；
+        /// Q14：支付类型（见 E01）#支付方式（见 E02）#支付金额#Hep 的支付记录 Guid#交易流
+        ///      水号#工号 PMS 编码#操作时间#交易类型（见 E74）#卡号#有效期|…；（交易流水号
+        ///      是用来对账；
+        /// Q15：优惠券编号；
+        /// Q16：发卡数；
+        /// Q17：设备 Guid；
+        /// Q18：班别 PMS 编码；
+        /// Q19：联房入住单 PMS 编码；（空时表示单独入住）
+        /// Q20：入住时间；（格式：yyyy-MM-dd HH:mm:ss）
+        /// Q21：离店时间；（格式同上）
+        /// Q22：时间属性（见 E12）；
+        /// Q23：散团（1-散客，2-团队）；
+        /// Q24：下单方式（见 E26）；
+        /// Q25：下单时间；
+        /// Q26：房号 PMS 编码；
+        /// </summary>
+        /// <param name="queryString"></param>
+        /// <returns></returns>
+        public InvokeResultData CheckIn(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "301",//查询酒店房间列表
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 锁定空房间
+        /// 确保是单线程操作。
+        /// queryString：
+        /// Q00：预留；
+        /// Q01：预留；
+        /// Q02：是否强制操作（1-不强制，2-强制）；
+        /// Q03：操作类型（1-上锁，2-解锁）；
+        /// Q04：酒店编码；
+        /// Q05：楼号；
+        /// Q06：房号；
+        /// Q07：设备 Guid；
+        /// </summary>
+        /// <param name="queryString"></param>
+        public InvokeResultData LockEmptyRoom(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "300",//查询酒店房间列表
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 结账
+        /// queryString：
+        /// Q00：预留；
+        /// Q01：预留；
+        /// Q02：酒店 PMS 编码；
+        /// Q03：入住单 PMS 编码；（多个用|隔开）
+        /// Q04：是否退房（1-是，2-否）；
+        /// Q05：支付类型（见 E01）#支付方式（见 E02）#支付金额#Hep 的支付记录 Guid#交易流
+        /// 水号#工号 PMS 编码#操作时间#交易类型（见 E74）#卡号#有效期|…；（如果是联房
+        /// 结账，Q04 就是支付所有房间的费用，如果是单房结账，Q04 只支付单房间费用）；
+        ///（支付金额为负数时，表示退款）
+        /// </summary>
+        /// <param name="queryString"></param>
+        public InvokeResultData CheckOut(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "308",//查询酒店房间列表
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 续住
+        /// queryString：
+        /// Q00：预留；
+        /// Q01：预留；
+        /// Q02：酒店 PMS 编码；
+        /// Q03：入住单 PMS 编码#离店时间|„；
+        /// Q04：日期#成交房价#原始房价#房价码#入住单 PMS 编码|„；
+        /// Q05：日期#餐券种类 Guid#餐券数量#餐券单价#餐券流水号#入住单 PMS 编码|„；
+        /// Q06：支付类型（见 E01）#支付方式（见 E02）#支付金额#Hep 的支付记录 Guid#交易流
+        /// 水号#工号 PMS 编码#操作时间#交易类型（见 E74）#卡号#有效期|…；（同 301.Q14）
+        /// Q07：班别 PMS 编码；
+        /// </summary>
+        /// <param name="queryString"></param>
+        public InvokeResultData ContinueToLive(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "306",//查询酒店房间列表
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 当前房态统计
+        /// queryString：
+        /// Q00：预留；
+        /// Q01：预留；
+        /// Q02：酒店 PMS 编码；
+        /// Q03：酒店房型 PMS 编码|…；
+        /// Q04：楼宇 PMS 编码；（空时不作筛选）
+        /// </summary>
+        /// <param name="queryString"></param>
+        public InvokeResultData CurrentRoomStateStatistics(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "202",//查询酒店房间列表
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 当前房态视图
+        /// queryString：
+        /// Q00：预留；
+        /// Q01：预留；
+        /// Q02：酒店 PMS 编码；
+        /// Q03：入住日期；
+        /// Q04：离店日期；
+        /// Q05：楼宇 PMS 编码；（空时不作筛选）
+        /// Q06：楼层 PMS 编码；（空时不作筛选）
+        /// </summary>
+        /// <param name="queryString"></param>
+        public InvokeResultData CurrentRoomStateView(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "205",//查询酒店房间列表
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 可用空房列表
+        /// queryString：
+        /// Q00：预留；
+        /// Q01：预留；
+        /// Q02：酒店 PMS 编码；[必须处理]
+        /// Q03：房型 PMS 编码；（空时不作筛选）[必须处理]
+        /// Q04：入住日期；
+        /// Q05：离店日期；
+        /// Q06：楼宇 PMS 编码；（空时不作筛选）
+        /// Q07：楼层 PMS 编码；（空时不作筛选）
+        /// Q08：是否包含脏房（1-是，2-否）；（空时默认否）
+        /// Q09：是否包含维修房（1-是，2-否）；（空时默认否）
+        /// Q10：是否包含临时不可用房（1-是，2-否）；（空时默认否）
+        /// Q11：返回数量；（空或 0 时表示返回全部）[必须处理，默认返回 1 条]
+        /// Q12：排除房号#...；
+        /// Q13：结果是否包含当日已被预定的房号（1-是，2-否）（空时默认 1）；
+        /// </summary>
+        /// <param name="queryString"></param>
+        public InvokeResultData EnableEmptyRoomList(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "204",//查询酒店房间列表
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 查询过夜房价
+        /// </summary>
+        /// <param name="queryString">
+        /// queryString：
+        ///Q00：预留；
+        ///Q01：预留；
+        ///Q02：酒店 PMS 编码；
+        ///Q03：开始日期；（大于等于）； 9 of 27
+        ///Q04： 结束日期；（小于等于）；
+        ///Q05： 酒店房型PMS编码|…；（空时默认全部）
+        ///Q06： 日期属性（见E29）；（空时默认1）
+        ///Q07： 时间属性（见E12）；（空时默认1）
+        ///Q08： 下单方式（见E26）；（空时默认1）
+        ///Q09： 价格类别（见E65）；（空时不做筛选）
+        ///Q10： 价格类别二级属性（如果Q09是会员级别，二级属性就是会员级别PMS编码）；
+        ///Q11： PMS房价码；（空时不做筛选）
+        /// </param>
+        /// <returns></returns>
+        public InvokeResultData QueryOvernightRates(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "206",//查询过夜房价
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 查找入住信息
+        /// </summary>
+        /// <param name="queryString">
+        /// queryString：
+        ///Q00：预留；
+        ///Q01：预留；
+        ///Q02：酒店 PMS 编码；
+        ///Q03：查询类型（2-入住人身份证号，3-房号，4-入住单 PMS 编码）；（“房号”可以是模糊匹配）
+        ///Q04：查询值；
+        ///Q05：是否含所有关联入住单（是否含联房主单）（1-是，2-否）；</param>
+        /// <returns></returns>
+        public InvokeResultData QueryCheckInInfo(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "307",//查询过夜房价
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 查找订单[有预订：1]
+        /// </summary>
+        /// <param name="queryString">
+        /// PMS 实现逻辑：当查询类型为 6 时，先根据身份证号查询，若找到了结果，就返回，根据
+        ///身份证号找不到订单时，再根据入住人姓名查询（若姓名为空，也无需查询）。
+        ///queryString：
+        ///Q00：预留；
+        ///Q01：预留；
+        ///Q02：酒店 PMS 编码；
+        ///Q03：查询类型（1-订单号，2-预订人身份证号，3-预订人手机号，4-所有）；
+        ///Q04：查询值；（查询类型为 4 时，此项为空）
+        ///Q05：入住日期；（空时不作筛选）</param>
+        /// <returns></returns>
+        public InvokeResultData QueryBookRoom(string queryString)
+        {
+            var baseData = new InvokeBaseData()
+            {
+                ClientInfo = "",
+                Function = "303",//查询过夜房价
+                Number = "",
+                QueryString = queryString,
+                State = "",
+                Version = ""
+            };
+            try
+            {
+                var data = _pmsService.InvokeService(baseData);
+                var result = (InvokeResultData)JsonConvert.DeserializeObject(data, typeof(InvokeResultData));
+                return result;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+    }
+}

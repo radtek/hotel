@@ -1,0 +1,8 @@
+﻿<NavigationWindow x:Class="CheckIn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="自助入住机" Height="1024" Icon="Images\icon1.ico" Width="1280" ShowsNavigationUI="False"
+        Source="IndexPage.xaml"  VerticalAlignment="Center"  
+        VerticalContentAlignment="Center"  WindowState="Maximized"  
+        WindowStyle="none"  LoadCompleted="NavigationWindow_Loaded">
+</NavigationWindow>

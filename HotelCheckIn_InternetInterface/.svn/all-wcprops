@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InternetInterface
+END
+InternetClass.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InternetInterface/InternetClass.cs
+END
+InternetFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InternetInterface/InternetFactory.cs
+END
+HotelCheckIn_Interface_Internet.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InternetInterface/HotelCheckIn_Interface_Internet.csproj
+END
+InternetInterface.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/3/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InternetInterface/InternetInterface.cs
+END

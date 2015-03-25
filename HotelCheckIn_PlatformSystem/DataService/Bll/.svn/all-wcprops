@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/selfcheckin/!svn/ver/926/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll
+END
+MenuPowerBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/selfcheckin/!svn/ver/926/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/MenuPowerBll.cs
+END
+GetPage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/17/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/GetPage.cs
+END
+ConvertToJson.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/selfcheckin/!svn/ver/16/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/ConvertToJson.cs
+END
+ConvertHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/selfcheckin/!svn/ver/16/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/ConvertHelper.cs
+END
+Thumbnail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/selfcheckin/!svn/ver/113/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/Thumbnail.cs
+END
+Message.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/16/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/Message.cs
+END
+EmployerBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/selfcheckin/!svn/ver/16/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/EmployerBll.cs
+END
+EasyUiJson.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/selfcheckin/!svn/ver/100/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/EasyUiJson.cs
+END
+ZwJson.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/226/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/ZwJson.cs
+END
+RoleBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/16/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/RoleBll.cs
+END
+UseRolesBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/selfcheckin/!svn/ver/16/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/UseRolesBll.cs
+END
+DepartmentBLL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/selfcheckin/!svn/ver/16/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/DepartmentBLL.cs
+END
+BaseBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/16/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/BaseBll.cs
+END
+DataPage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/243/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/DataPage.cs
+END
+ResMenuBll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/selfcheckin/!svn/ver/16/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Bll/ResMenuBll.cs
+END

@@ -1,0 +1,4 @@
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InternetInterface\bin\Debug\HotelCheckIn_InternetInterface.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InternetInterface\bin\Debug\HotelCheckIn_InternetInterface.pdb
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InternetInterface\obj\Debug\HotelCheckIn_InternetInterface.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_InternetInterface\obj\Debug\HotelCheckIn_InternetInterface.pdb

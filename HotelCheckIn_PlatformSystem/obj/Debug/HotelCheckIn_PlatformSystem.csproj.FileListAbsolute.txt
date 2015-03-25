@@ -1,0 +1,10 @@
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\bin\HotelCheckIn_PlatformSystem.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\bin\HotelCheckIn_PlatformSystem.pdb
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\bin\CommonLibrary.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\bin\log4net.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\bin\MySql.Data.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\bin\YOUO.Framework.DataAccess.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\bin\CommonLibrary.pdb
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\obj\Debug\HotelCheckIn_PlatformSystem.csprojResolveAssemblyReference.cache
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\obj\Debug\HotelCheckIn_PlatformSystem.dll
+E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_PlatformSystem\obj\Debug\HotelCheckIn_PlatformSystem.pdb

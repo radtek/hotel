@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/402/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter
+END
+InitUpgradeFile.cs
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/selfcheckin/!svn/ver/307/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/InitUpgradeFile.cs
+END
+InitFilesGrid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/selfcheckin/!svn/ver/137/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/InitFilesGrid.cs
+END
+InitMachineGrid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/selfcheckin/!svn/ver/199/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/InitMachineGrid.cs
+END
+InitMainGrid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/selfcheckin/!svn/ver/242/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/InitMainGrid.cs
+END
+HearBeatPara.cs
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/selfcheckin/!svn/ver/214/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/HearBeatPara.cs
+END
+QueryFault.cs
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/selfcheckin/!svn/ver/242/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/QueryFault.cs
+END
+GetMachine.cs
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/selfcheckin/!svn/ver/225/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/GetMachine.cs
+END
+InitHotelGrid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/selfcheckin/!svn/ver/402/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/InitHotelGrid.cs
+END
+GetUpgradeFile.cs
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/selfcheckin/!svn/ver/338/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/GetUpgradeFile.cs
+END
+InitMaterialGrid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/selfcheckin/!svn/ver/107/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_PlatformSystem/DataService/Model/Parameter/InitMaterialGrid.cs
+END

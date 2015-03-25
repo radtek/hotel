@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D604AA0F-D47B-4303-B7E8-60788E9FFD15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotelCheckIn_InterfaceSystem</RootNamespace>
+    <AssemblyName>HotelCheckIn_InterfaceSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="model\Allocation.cs" />
+    <Compile Include="model\ArrivingList.cs" />
+    <Compile Include="model\AuthenToken.cs" />
+    <Compile Include="model\AvailRooms.cs" />
+    <Compile Include="model\Bill.cs" />
+    <Compile Include="model\CardDetail.cs" />
+    <Compile Include="model\CardDetailList.cs" />
+    <Compile Include="model\CardInfo.cs" />
+    <Compile Include="model\ClockRate.cs" />
+    <Compile Include="model\ClockRoomRateList.cs" />
+    <Compile Include="model\DM.cs" />
+    <Compile Include="model\Guest.cs" />
+    <Compile Include="model\OrderRegister.cs" />
+    <Compile Include="model\RegistAccount.cs" />
+    <Compile Include="model\RegistBack.cs" />
+    <Compile Include="model\Register.cs" />
+    <Compile Include="model\RegisterInfo.cs" />
+    <Compile Include="model\RegistList.cs" />
+    <Compile Include="model\ReturnInfo.cs" />
+    <Compile Include="model\Room.cs" />
+    <Compile Include="model\RoomList.cs" />
+    <Compile Include="model\RoomRate.cs" />
+    <Compile Include="model\RoomRateList.cs" />
+    <Compile Include="model\VoidReturn.cs" />
+    <Compile Include="PMSFactory.cs" />
+    <Compile Include="PMSInterface.cs" />
+    <Compile Include="PMSClass.cs" />
+    <Compile Include="PmsRequest\AnalysisXml.cs" />
+    <Compile Include="PmsRequest\CreatRequestXml.cs" />
+    <Compile Include="PmsRequest\PmsTest.cs" />
+    <Compile Include="PmsRequest\SendRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="文件资料\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{F64CB126-F06A-4EE3-9493-2AC095ADD73B}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

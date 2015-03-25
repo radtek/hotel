@@ -1,0 +1,20 @@
+﻿#selAreas, #selHotels,#selFault,#selKssj,#selJssj
+{
+    width: 130px;
+    height: 22px;
+    font-size: 14px;
+}
+#tdRight
+{
+    text-align: right;
+}
+.td-width
+{
+    width: 50px;
+    text-align: center;
+}
+.td-width2
+{
+    width: 70px;
+    text-align: center;
+}

@@ -1,0 +1,101 @@
+10
+
+dir
+967
+https://subversion.assembla.com/svn/selfcheckin/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware
+https://subversion.assembla.com/svn/selfcheckin
+
+
+
+2014-08-07T08:02:38.690380Z
+949
+zhangwei0808
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0de1a0f9-1873-4d33-9ffc-f103c452dac5
+
+Into-Notes
+dir
+
+PMS
+dir
+
+CoinsMachine
+dir
+
+AdelRead
+dir
+
+BDBridge
+dir
+
+CardManage
+dir
+
+ReadIdCard
+dir
+
+BankOfCard
+dir
+
+Properties
+dir
+
+HotelCheckIn_Interface_Hardware.csproj
+file
+
+
+
+
+2014-08-07T01:28:43.204510Z
+59f8aeabc1ce236a6362ff51f476d904
+2014-08-07T02:08:36.636330Z
+933
+zhangwei0808
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6421
+
+BA-Bridge
+dir
+
+LedLight
+dir
+
+NewReadIdCard
+dir
+
+Out-Notes
+dir
+

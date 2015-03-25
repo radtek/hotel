@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E511FE2E-3DC3-472C-9D50-3BEBB059A73F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotelCheckIn_Interface_Hardware</RootNamespace>
+    <AssemblyName>HotelCheckIn_Interface_Hardware</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonLibrary\dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\CommonLibrary\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="YOUO.Framework.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonLibrary\dll\YOUO.Framework.DataAccess.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdelRead\AdelReadClass.cs" />
+    <Compile Include="BA-Bridge\BABridgeClass.cs" />
+    <Compile Include="BA-Bridge\BABridgeCommandInfo.cs" />
+    <Compile Include="BankOfCard\BankCardPaymentService.cs" />
+    <Compile Include="BankOfCard\RepInfo.cs" />
+    <Compile Include="BDBridge\BDBridgeClass.cs" />
+    <Compile Include="BDBridge\BDBridgeCommandInfo.cs" />
+    <Compile Include="CardManage\CardManage.cs" />
+    <Compile Include="CardManage\PackageK100Dll.cs" />
+    <Compile Include="CoinsMachine\CoinsMachineService.cs" />
+    <Compile Include="Into-Notes\CommandResponse.cs" />
+    <Compile Include="Into-Notes\IntoNotesService.cs" />
+    <Compile Include="LedLight\LedLightApi.cs" />
+    <Compile Include="NewReadIdCard\ReadIdCardDal.cs" />
+    <Compile Include="Out-Notes\Cc.cs" />
+    <Compile Include="Out-Notes\Error.cs" />
+    <Compile Include="Out-Notes\SensorStatus.cs" />
+    <Compile Include="Out-Notes\Status.cs" />
+    <Compile Include="PMS\InvokeBaseData.cs" />
+    <Compile Include="PMS\InvokeResultData.cs" />
+    <Compile Include="PMS\PmsDataService.cs" />
+    <Compile Include="PMS\PmsEnum.cs" />
+    <Compile Include="PMS\PmsService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadIdCard\IdCard.cs" />
+    <Compile Include="ReadIdCard\IdCardInterFace.cs" />
+    <Compile Include="ReadIdCard\IdCardModel.cs" />
+    <Compile Include="ReadIdCard\IdCard_P1.cs" />
+    <Compile Include="ReadIdCard\IdCard_P2.cs" />
+    <Compile Include="ReadIdCard\PackageK001dll.cs" />
+    <Compile Include="ReadIdCard\ResultIdModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="文件资料\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{F64CB126-F06A-4EE3-9493-2AC095ADD73B}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CardManage\DLL\AdelICK.dll" />
+    <Content Include="CardManage\DLL\IB10E32.DLL" />
+    <Content Include="CardManage\DLL\IB97E32.DLL" />
+    <Content Include="CardManage\DLL\Ib97u32.dll" />
+    <Content Include="CardManage\DLL\IBFS32.DLL" />
+    <Content Include="CardManage\DLL\LOCKDLL.dll" />
+    <Content Include="CardManage\DLL\LockIC.dll" />
+    <Content Include="CardManage\DLL\LockICk.dll" />
+    <Content Include="CardManage\DLL\lockTI.dll" />
+    <Content Include="CardManage\DLL\lockTM.dll" />
+    <Content Include="CardManage\DLL\lockTMD.dll" />
+    <Content Include="CardManage\DLL\M100A_DLL.dll" />
+    <Content Include="CardManage\DLL\MainDll.dll" />
+    <Content Include="CardManage\DLL\MainDll_old.dll" />
+    <Content Include="CardManage\DLL\Mifare.dll" />
+    <Content Include="CardManage\DLL\Mifare_old.dll" />
+    <Content Include="CardManage\DLL\RFTemic.dll" />
+    <Content Include="CardManage\DLL\RFTemic_old.dll" />
+    <Content Include="CardManage\DLL\RF_USB.dll" />
+    <Content Include="CardManage\DLL\scardsyn.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadIdCard\sdtapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReadIdCard\Syn_IDCardRead.dll" />
+    <Content Include="ReadIdCard\WltRS.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

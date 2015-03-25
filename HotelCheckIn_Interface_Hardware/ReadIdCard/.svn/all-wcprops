@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/selfcheckin/!svn/ver/923/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard
+END
+ResultIdModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/selfcheckin/!svn/ver/736/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/ResultIdModel.cs
+END
+WltRS.dll
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/507/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/WltRS.dll
+END
+Syn_IDCardRead.dll
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/selfcheckin/!svn/ver/734/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/Syn_IDCardRead.dll
+END
+PackageK001dll.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/selfcheckin/!svn/ver/507/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/PackageK001dll.cs
+END
+IdCard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/736/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/IdCard.cs
+END
+IdCard_P1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/923/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/IdCard_P1.cs
+END
+IdCardInterFace.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/selfcheckin/!svn/ver/736/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/IdCardInterFace.cs
+END
+IdCardModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/selfcheckin/!svn/ver/736/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/IdCardModel.cs
+END
+IdCard_P2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/selfcheckin/!svn/ver/923/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/IdCard_P2.cs
+END
+sdtapi.dll
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/selfcheckin/!svn/ver/507/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_Interface_Hardware/ReadIdCard/sdtapi.dll
+END

@@ -1,0 +1,13 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CheckIn.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CheckIn_BackService_InterFace" Type="(Web Service URL)" Scope="Application">
+<<<<<<< .mine
+      <Value Profile="(Default)">http://localhost:19843/DataService/WebService/InterFace.asmx</Value>
+=======
+      <Value Profile="(Default)">http://192.168.20.200:8081/DataService/WebService/InterFace.asmx</Value>
+>>>>>>> .r939
+    </Setting>
+  </Settings>
+</SettingsFile>

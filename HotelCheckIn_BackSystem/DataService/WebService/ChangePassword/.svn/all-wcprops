@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/selfcheckin/!svn/ver/633/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/ChangePassword
+END
+PasswordService.ashx
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/selfcheckin/!svn/ver/65/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/ChangePassword/PasswordService.ashx
+END
+PasswordService.ashx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/selfcheckin/!svn/ver/633/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_BackSystem/DataService/WebService/ChangePassword/PasswordService.ashx.cs
+END

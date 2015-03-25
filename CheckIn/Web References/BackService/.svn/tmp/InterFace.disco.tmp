@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+<<<<<<< .mine
+  <contractRef ref="http://localhost:19843/DataService/WebService/InterFace.asmx?wsdl" docRef="http://localhost:19843/DataService/WebService/InterFace.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost:19843/DataService/WebService/InterFace.asmx" xmlns:q1="http://tempuri.org/" binding="q1:InterFaceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost:19843/DataService/WebService/InterFace.asmx" xmlns:q2="http://tempuri.org/" binding="q2:InterFaceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+=======
+  <contractRef ref="http://192.168.20.200:8081/DataService/WebService/InterFace.asmx?wsdl" docRef="http://192.168.20.200:8081/DataService/WebService/InterFace.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://192.168.20.200:8081/DataService/WebService/InterFace.asmx" xmlns:q1="http://tempuri.org/" binding="q1:InterFaceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://192.168.20.200:8081/DataService/WebService/InterFace.asmx" xmlns:q2="http://tempuri.org/" binding="q2:InterFaceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+>>>>>>> .r939
+</discovery>

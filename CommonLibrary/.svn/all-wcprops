@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/selfcheckin/!svn/ver/855/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary
+END
+XmlHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/selfcheckin/!svn/ver/619/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/XmlHelper.cs
+END
+UrlHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/selfcheckin/!svn/ver/149/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/UrlHelper.cs
+END
+PageObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/selfcheckin/!svn/ver/21/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/PageObject.cs
+END
+ErrorCode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/selfcheckin/!svn/ver/808/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/ErrorCode.cs
+END
+Transaction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/selfcheckin/!svn/ver/651/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/Transaction.cs
+END
+CommonLibrary.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/selfcheckin/!svn/ver/358/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/CommonLibrary.csproj
+END
+Constant.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/selfcheckin/!svn/ver/21/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/Constant.cs
+END

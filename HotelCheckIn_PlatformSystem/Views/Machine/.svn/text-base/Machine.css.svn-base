@@ -1,0 +1,90 @@
+﻿#selAreas, #selHotels
+{
+    width: 130px;
+    height: 22px;
+    font-size: 14px;
+}
+#selAreas2, #selHotels2
+{
+    width: 155px;
+    height: 21px;
+    font-size: 14px;
+}
+#tdRight
+{
+    width: 200px;
+    text-align: right;
+}
+#tdSel
+{
+    width: 150px;
+    margin-left: 20px;
+}
+#materialurl
+{
+    font-size: 14px;
+    margin: 10px 0 10px 20px;
+}
+#txtUrl
+{
+    width: 300px;
+    margin-left: 10px;
+}
+.tableForm
+{
+    margin: 1px;
+}
+.tableForm table
+{
+}
+#table-style
+{
+    border: 1px solid #DCDCDC;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.redstart
+{
+    padding: 0 20px;
+    color: red;
+    background-color: #eee;
+}
+.tr
+{
+    height: 40px;
+}
+.td
+{
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    background-color: #E4EDFE;
+    padding: 0 28px;
+}
+.td-width
+{
+    width: 50px;
+    text-align: center;
+}
+.txt
+{
+    width: 150px;
+    height: 16px;
+}
+#sel_doload
+{
+    height: 21px;
+    width: 155px;
+}
+.td-input
+{
+    width: 180px;
+    padding-left: 30px;
+    background-color: #eee;
+}
+.tableForm table
+{
+    border: 1px solid #DCDCDC;
+    border-spacing: 0;
+    border-collapse: collapse;
+}

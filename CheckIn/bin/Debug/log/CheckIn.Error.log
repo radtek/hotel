@@ -1,0 +1,1210 @@
+************ System Start **********2014-06-24 16:59:48,418 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:76) ERROR 入钞硬件检测 [(null)] - 109，入钞
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.Bll.CheckHard.CheckHard_BABridge(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 69
+2014-06-24 17:00:01,411 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:76) ERROR 入钞硬件检测 [(null)] - 109，入钞
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.Bll.CheckHard.CheckHard_BABridge(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 69
+************ System End ************************ System Start **********2014-06-24 17:18:15,525 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:76) ERROR 入钞硬件检测 [(null)] - 109，入钞
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.Bll.CheckHard.CheckHard_BABridge(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 69
+2014-06-24 17:18:29,728 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:76) ERROR 入钞硬件检测 [(null)] - 109，入钞
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.Bll.CheckHard.CheckHard_BABridge(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 69
+************ System End ************************ System Start **********2014-06-25 14:43:18,279 [8](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:100) ERROR CheckIn.MainWindow [(null)] - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 HotelCheckIn_Interface_Hardware.Into_Notes.IntoNotesService.CloseComPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\Into-Notes\IntoNotesService.cs:行号 71
+   在 CheckIn.Bll.CheckHard.CheckHard_BACom(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 113
+   在 CheckIn.Bll.CheckHard.CheckHard_All(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 30
+   在 CheckIn.MainWindow.InitDevice() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 86
+************ System Start **********2014-06-25 15:04:21,382 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:100) ERROR CheckIn.MainWindow [(null)] - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 HotelCheckIn_Interface_Hardware.Into_Notes.IntoNotesService.QueryState(Byte[] send) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\Into-Notes\IntoNotesService.cs:行号 174
+   在 CheckIn.Bll.CheckHard.CheckHard_BACom(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 127
+   在 CheckIn.Bll.CheckHard.CheckHard_All(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 30
+   在 CheckIn.MainWindow.InitDevice() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 86
+************ System Start **********2014-06-25 16:28:00,009 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:128) ERROR 入钞硬件检测 [(null)] - 109，入钞
+
+************ System Start **********2014-06-25 16:28:58,444 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:128) ERROR 入钞硬件检测 [(null)] - 109，入钞
+
+************ System Start **********2014-07-02 09:27:09,312 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:155) ERROR 入钞硬件检测 [(null)] - 109，入钞
+System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 HotelCheckIn_Interface_Hardware.Into_Notes.IntoNotesService.QueryState(Byte[] send) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\Into-Notes\IntoNotesService.cs:行号 100
+   在 CheckIn.Bll.CheckHard.CheckHard_BACom(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 127
+2014-07-02 09:27:18,588 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:155) ERROR 入钞硬件检测 [(null)] - 109，入钞
+System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 HotelCheckIn_Interface_Hardware.Into_Notes.IntoNotesService.QueryState(Byte[] send) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\Into-Notes\IntoNotesService.cs:行号 100
+   在 CheckIn.Bll.CheckHard.CheckHard_BACom(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 127
+************ System End ************************ System Start **********2014-07-02 09:30:00,338 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash.xaml.cs:382) ERROR CheckIn.StepPages.CollectionCash [(null)] - System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.StepPages.CollectionCash.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash.xaml.cs:行号 366
+************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-07-02 10:41:30,753 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash.xaml.cs:385) ERROR CheckIn.StepPages.CollectionCash [(null)] - System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.StepPages.CollectionCash.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash.xaml.cs:行号 369
+************ System Start **********2014-07-02 10:42:14,001 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash.xaml.cs:385) ERROR CheckIn.StepPages.CollectionCash [(null)] - System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.StepPages.CollectionCash.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash.xaml.cs:行号 369
+************ System Start ********************** System End ************************ System Start **********2014-07-02 11:20:10,115 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash.xaml.cs:385) ERROR CheckIn.StepPages.CollectionCash [(null)] - System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.StepPages.CollectionCash.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash.xaml.cs:行号 369
+************ System Start **********2014-07-02 11:43:38,934 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\IntoNotes.xaml.cs:103) ERROR CheckIn.StepPages.IntoNotes [(null)] - System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 HotelCheckIn_Interface_Hardware.Into_Notes.IntoNotesService.QueryState(Byte[] send) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\Into-Notes\IntoNotesService.cs:行号 100
+   在 CheckIn.StepPages.IntoNotes.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\IntoNotes.xaml.cs:行号 111
+   在 CheckIn.StepPages.IntoNotes.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\IntoNotes.xaml.cs:行号 97
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-07-03 08:47:25,500 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:122) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 HotelCheckIn_Interface_Hardware.Into_Notes.IntoNotesService.OpenComPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\Into-Notes\IntoNotesService.cs:行号 50
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 214
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 116
+************ System Start **********2014-07-03 13:31:19,730 [8](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 323
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System Start **********2014-07-03 13:32:29,110 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 321
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System End ************************ System Start **********2014-07-03 13:34:29,883 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 321
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System Start **********2014-07-03 13:36:08,217 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 321
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System Start **********2014-07-03 13:42:22,859 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 321
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System End ************************ System Start **********2014-07-03 13:45:37,995 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 321
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System End ************************ System Start **********2014-07-03 13:46:17,970 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 321
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System End ************************ System Start **********2014-07-03 13:48:47,787 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 321
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System End ************************ System Start **********2014-07-03 13:50:06,017 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 321
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System Start **********2014-07-03 13:59:44,355 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:108) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 356
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 102
+************ System Start **********2014-07-03 14:06:25,309 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:109) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 358
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 103
+************ System End ************************ System Start **********2014-07-03 14:07:06,223 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:109) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 362
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 103
+************ System Start **********2014-07-03 14:10:13,247 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:109) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 359
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 103
+************ System End ************************ System Start **********2014-07-03 14:10:36,161 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:109) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 359
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 103
+************ System End ************************ System Start **********2014-07-03 14:11:18,056 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:109) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 354
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 103
+2014-07-03 14:11:58,103 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\Fabrication.xaml.cs:195) ERROR CheckIn.StepPages.Fabrication [(null)] - 入住信息上传出错:System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   在 System.Collections.Generic.List`1.get_Item(Int32 index)
+   在 CheckIn.StepPages.Fabrication.UploadInfo() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\Fabrication.xaml.cs:行号 112
+************ System Start **********2014-07-03 14:13:58,603 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:109) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 354
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 103
+************ System End ************************ System Start **********2014-07-03 14:16:45,504 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:109) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 354
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 103
+************ System End ************************ System Start ********************** System End ************************ System Start **********2014-07-03 14:24:48,408 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 357
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:17:45,939 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 355
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:18:08,542 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 355
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:23:11,167 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 362
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:28:04,578 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 364
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:42:55,554 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 362
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:44:40,708 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 363
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:46:11,537 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 363
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:46:50,431 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 363
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:48:03,091 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 363
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 15:55:02,849 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 16:10:28,033 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 17:06:25,156 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 17:08:20,496 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 17:23:56,085 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 17:25:06,858 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 17:25:51,866 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-03 17:26:15,102 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 08:56:53,865 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 08:58:37,468 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:04:12,030 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.InvalidOperationException: 端口被关闭。
+   在 System.IO.Ports.SerialPort.Write(Byte[] buffer, Int32 offset, Int32 count)
+   在 HotelCheckIn_Interface_Hardware.Into_Notes.IntoNotesService.QueryState(Byte[] send) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\Into-Notes\IntoNotesService.cs:行号 100
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 352
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:05:01,778 [8](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:08:36,894 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 368
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:23:24,320 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 369
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:25:46,524 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 369
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:34:40,231 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 371
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:39:46,988 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 373
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:43:34,629 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 374
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:51:25,927 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 383
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 09:52:51,801 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 384
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 10:02:11,163 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 388
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 10:05:50,943 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 386
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 10:08:14,849 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 388
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 10:54:48,363 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 388
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 10:56:38,784 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 400
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 10:58:07,628 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 400
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 11:05:44,460 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 400
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 11:07:00,213 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 400
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 11:22:56,008 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 407
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 11:26:40,573 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 407
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 11:30:09,500 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 407
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start **********2014-07-04 11:35:45,985 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:98) ERROR CheckIn.StepPages.CollectionCash_COM [(null)] - System.IO.IOException: 端口“com5”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 77
+   在 CheckIn.StepPages.CollectionCash_COM.RcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 407
+   在 CheckIn.StepPages.CollectionCash_COM.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CollectionCash_COM.xaml.cs:行号 92
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-07-14 15:26:50,792 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReturnCash.xaml.cs:327) ERROR CheckIn.StepPages.ReturnCash [(null)] - System.IO.IOException: 端口“com7”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 118
+   在 CheckIn.StepPages.ReturnCash.ReturnCard() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReturnCash.xaml.cs:行号 317
+2014-07-14 15:26:50,835 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReturnCash.xaml.cs:234) ERROR CheckIn.StepPages.ReturnCash [(null)] - 110
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4950
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BDBridge.BDBridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BDBridge\BDBridgeClass.cs:行号 68
+   在 CheckIn.StepPages.ReturnCash.CcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReturnCash.xaml.cs:行号 223
+2014-07-14 15:26:50,927 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReturnCash.xaml.cs:327) ERROR CheckIn.StepPages.ReturnCash [(null)] - System.IO.IOException: 端口“com7”不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   在 System.IO.Ports.SerialPort.Open()
+   在 HotelCheckIn_Interface_Hardware.LedLight.LedLightApi.OpenLedByNum(Int32 num) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\LedLight\LedLightApi.cs:行号 118
+   在 CheckIn.StepPages.ReturnCash.ReturnCard() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReturnCash.xaml.cs:行号 317
+2014-07-14 15:26:50,927 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReturnCash.xaml.cs:93) ERROR CheckIn.StepPages.ReturnCash [(null)] - CommonLibrary.exception.BusinessException: 网络通讯错误。
+   在 CheckIn.StepPages.ReturnCash.CcInit() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReturnCash.xaml.cs:行号 235
+   在 CheckIn.StepPages.ReturnCash.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReturnCash.xaml.cs:行号 84
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-07-16 15:40:45,389 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:127) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start **********2014-07-16 15:56:29,705 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:127) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start **********2014-07-16 16:41:00,557 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:127) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start **********2014-07-16 16:41:18,434 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:127) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start **********2014-07-16 16:46:59,861 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:128) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start **********2014-07-16 16:51:34,310 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:128) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start **********2014-07-16 16:54:13,298 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:128) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start **********2014-07-16 16:55:44,893 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:128) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start **********2014-07-16 17:07:28,170 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:142) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-07-25 13:59:20,515 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:160) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System End ************************ System Start **********2014-07-25 14:12:56,444 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:160) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-07-25 14:53:29,227 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:202) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+2014-07-25 14:53:34,262 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:202) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System End ************************ System Start **********2014-07-25 14:55:51,385 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:212) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System End ************************ System Start ********************** System End ************************ System Start **********2014-07-25 15:00:36,843 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:211) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+2014-07-25 15:00:41,878 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:211) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System End ************************ System Start ********************** System End ************************ System Start **********2014-07-28 09:14:07,424 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:214) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+2014-07-28 09:14:15,380 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:214) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System Start ********************** System End ************************ System Start **********2014-07-28 09:20:23,906 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:160) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 未将对象引用设置到对象的实例。
+************ System End ************************ System Start **********2014-07-28 09:20:41,075 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:160) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 未将对象引用设置到对象的实例。
+************ System End ************************ System Start **********2014-07-28 09:22:23,336 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:160) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 未将对象引用设置到对象的实例。
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-07-28 14:49:25,730 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:157) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 读卡失败
+************ System End ************************ System Start **********2014-07-28 14:50:36,217 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:157) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 读卡失败
+************ System End ************************ System Start **********2014-07-28 14:52:27,851 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:157) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 读卡失败
+************ System End ************************ System Start **********2014-07-28 14:57:26,583 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:228) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 预授权异常
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-07-28 16:24:03,749 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:250) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System End ************************ System Start **********2014-07-28 16:27:16,869 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:250) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System End ************************ System Start **********2014-07-28 16:28:26,831 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:250) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-07-28 17:18:49,743 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:243) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+2014-07-28 17:18:54,779 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:243) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 输入密码异常
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-08-05 08:59:39,928 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:156) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start ********************** System End ************************ System Start **********2014-08-05 09:11:08,124 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\CoinsMoneyControls.xaml.cs:132) ERROR CheckIn.StepPages.CoinsMoneyControls [(null)] - System.EventArgs
+************ System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start ********************** System End ************************ System Start **********2014-08-07 11:02:47,314 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\BankCardPaymentOftwo.xaml.cs:143) ERROR CheckIn.StepPages.BankCardPaymentOftwo [(null)] - 打开密码键盘失败
+************ System End ************************ System Start ********************** System End ************************ System Start **********2014-08-08 09:18:23,805 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:91) ERROR 入钞硬件检测 [(null)] - 109，入钞
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.Bll.CheckHard.CheckHard_BABridge(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 84
+2014-08-08 09:18:32,740 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:91) ERROR 入钞硬件检测 [(null)] - 109，入钞
+System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:4930
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 HotelCheckIn_Interface_Hardware.BA_Bridge.BABridgeClass.SocketOpen(String hostIP, Int32 hostPort) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\BA-Bridge\BABridgeClass.cs:行号 86
+   在 CheckIn.Bll.CheckHard.CheckHard_BABridge(String& strMessage) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckHard.cs:行号 84
+************ System End ************************ System Start ********************** System End ************************ System Start **********2014-08-08 09:21:18,311 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:199) ERROR CheckIn.StepPages.InputPhone [(null)] - System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 HotelCheckIn_BackSystem.DataService.WebService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\WebService\InterFace.asmx.cs:行号 423
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 196
+   在 CheckIn.Bll.CheckInBll.GetCheckInInfo(String validationCode, String phoneNumber, DateTime checkinTime, DateTime checkoutTime) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckInBll.cs:行号 11
+   在 CheckIn.StepPages.InputPhone.Next_Click(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:行号 139
+2014-08-08 09:21:24,359 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:199) ERROR CheckIn.StepPages.InputPhone [(null)] - System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 HotelCheckIn_BackSystem.DataService.WebService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\WebService\InterFace.asmx.cs:行号 423
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 196
+   在 CheckIn.Bll.CheckInBll.GetCheckInInfo(String validationCode, String phoneNumber, DateTime checkinTime, DateTime checkoutTime) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckInBll.cs:行号 11
+   在 CheckIn.StepPages.InputPhone.Next_Click(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:行号 139
+2014-08-08 09:23:58,888 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:199) ERROR CheckIn.StepPages.InputPhone [(null)] - System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 HotelCheckIn_BackSystem.DataService.WebService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\WebService\InterFace.asmx.cs:行号 423
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 196
+   在 CheckIn.Bll.CheckInBll.GetCheckInInfo(String validationCode, String phoneNumber, DateTime checkinTime, DateTime checkoutTime) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckInBll.cs:行号 11
+   在 CheckIn.StepPages.InputPhone.Next_Click(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:行号 139
+2014-08-08 09:24:10,555 [9](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:199) ERROR CheckIn.StepPages.InputPhone [(null)] - System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 HotelCheckIn_BackSystem.DataService.WebService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\WebService\InterFace.asmx.cs:行号 423
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 196
+   在 CheckIn.Bll.CheckInBll.GetCheckInInfo(String validationCode, String phoneNumber, DateTime checkinTime, DateTime checkoutTime) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckInBll.cs:行号 11
+   在 CheckIn.StepPages.InputPhone.Next_Click(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:行号 139
+************ System Start **********2014-08-08 09:25:27,273 [13](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 基础连接已经关闭: 接收时发生错误。 ---> System.IO.IOException: 无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+************ System End ************************ System Start **********2014-08-08 09:27:51,626 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:199) ERROR CheckIn.StepPages.InputPhone [(null)] - System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> MySql.Data.MySqlClient.MySqlException: Table 'test_hotel_backsystem.t_RoomLockInfo' doesn't exist
+   在 YOUO.Framework.DataAccess.DBOperator.GetDataTable(String sql, Object[] paramValues)
+   在 HotelCheckIn_BackSystem.DataService.Dal.CheckNoDal.QueryCheckNoIsKnock(CheckNoInfo bean) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\Dal\CheckNoDal.cs:行号 95
+   在 HotelCheckIn_BackSystem.DataService.Bll.CheckNoBll.QueryCheckNoIsKnock(CheckNoInfo bean) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\Bll\CheckNoBll.cs:行号 102
+   在 HotelCheckIn_BackSystem.DataService.WebService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\WebService\InterFace.asmx.cs:行号 757
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 196
+   在 CheckIn.Bll.CheckInBll.GetCheckInInfo(String validationCode, String phoneNumber, DateTime checkinTime, DateTime checkoutTime) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckInBll.cs:行号 11
+   在 CheckIn.StepPages.InputPhone.Next_Click(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:行号 139
+2014-08-08 09:42:10,474 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:199) ERROR CheckIn.StepPages.InputPhone [(null)] - System.Net.WebException: 操作超时
+   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.QueryCheckNo(QueryCheckNoInfo qcnInfo) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 196
+   在 CheckIn.Bll.CheckInBll.GetCheckInInfo(String validationCode, String phoneNumber, DateTime checkinTime, DateTime checkoutTime) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Bll\CheckInBll.cs:行号 11
+   在 CheckIn.StepPages.InputPhone.Next_Click(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:行号 139
+2014-08-08 09:42:49,611 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:121) ERROR CheckIn.MainWindow [(null)] - System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> MySql.Data.MySqlClient.MySqlException: Table 'test_hotel_backsystem.t_RoomQuality' doesn't exist
+   在 YOUO.Framework.DataAccess.DBOperator.GetDataTable(String sql, Object[] paramValues)
+   在 HotelCheckIn_BackSystem.DataService.Dal.InternetGroupDal.QueryRoomQuality(RoomQuality bean) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\Dal\InternetGroupDal.cs:行号 330
+   在 HotelCheckIn_BackSystem.DataService.Bll.InternetGroupBll.QueryRoomQuality(RoomQuality bean) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\Bll\InternetGroupBll.cs:行号 109
+   在 HotelCheckIn_BackSystem.DataService.WebService.InterFace.QueryRoomQuality(String typeId) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_BackSystem\DataService\WebService\InterFace.asmx.cs:行号 1492
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.QueryRoomQuality(String typeId) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 615
+   在 CheckIn.StepPages.RoomSelect.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\RoomSelect.xaml.cs:行号 54
+   在 System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   在 System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   在 System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   在 System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   在 System.Windows.BroadcastEventHelper.BroadcastEvent(DependencyObject root, RoutedEvent routedEvent)
+   在 System.Windows.BroadcastEventHelper.BroadcastLoadedEvent(Object root)
+   在 MS.Internal.LoadedOrUnloadedOperation.DoWork()
+   在 System.Windows.Media.MediaContext.FireLoadedPendingCallbacks()
+   在 System.Windows.Media.MediaContext.FireInvokeOnRenderCallbacks()
+   在 System.Windows.Media.MediaContext.RenderMessageHandlerCore(Object resizedCompositionTarget)
+   在 System.Windows.Media.MediaContext.RenderMessageHandler(Object resizedCompositionTarget)
+   在 System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   在 MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+2014-08-08 09:42:50,814 [11](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\IndexPage.xaml.cs:42) ERROR CheckIn.IndexPage [(null)] - 解锁房间：0402失败。
+************ System End ************************ System Start **********2014-08-08 10:08:38,432 [12](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 基础连接已经关闭: 接收时发生错误。 ---> System.IO.IOException: 无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+************ System End ************************ System Start **********2014-08-08 10:16:39,053 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:121) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 操作超时
+   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.RoomLockSet(String roomno, String type, String phone, String checkno, String macid) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 371
+   在 CheckIn.StepPages.RoomSelect.Next_Click(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\RoomSelect.xaml.cs:行号 189
+   在 System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   在 System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   在 System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   在 System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   在 System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   在 System.Windows.Controls.Button.OnClick()
+   在 System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   在 System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   在 System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   在 System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   在 System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   在 System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   在 System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   在 System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   在 System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   在 System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   在 System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   在 System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   在 System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   在 System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   在 System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   在 System.Windows.Input.InputManager.ProcessStagingArea()
+   在 System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   在 System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   在 System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   在 System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   在 System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   在 MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   在 MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   在 System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   在 MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+2014-08-08 10:16:40,034 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\IndexPage.xaml.cs:42) ERROR CheckIn.IndexPage [(null)] - 解锁房间：0402失败。
+2014-08-08 10:23:42,370 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:121) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 操作超时
+   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.RoomLockSet(String roomno, String type, String phone, String checkno, String macid) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 371
+   在 CheckIn.StepPages.RoomSelect.Next_Click(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\RoomSelect.xaml.cs:行号 189
+   在 System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   在 System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   在 System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   在 System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   在 System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   在 System.Windows.Controls.Button.OnClick()
+   在 System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   在 System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   在 System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   在 System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   在 System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   在 System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   在 System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   在 System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   在 System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   在 System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   在 System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   在 System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   在 System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   在 System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   在 System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   在 System.Windows.Input.InputManager.ProcessStagingArea()
+   在 System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   在 System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   在 System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   在 System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   在 System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   在 MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   在 MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   在 System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   在 MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+2014-08-08 10:24:10,636 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\IndexPage.xaml.cs:42) ERROR CheckIn.IndexPage [(null)] - 解锁房间：0402失败。
+2014-08-08 10:27:03,358 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:71) ERROR CheckIn.StepPages.ReadIdCard [(null)] - System.DllNotFoundException: 无法加载 DLL“sdtapi.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard_P1.SDT_OpenPort(Int32 iPort)
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard_P1.OpenPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard_P1.cs:行号 104
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard.OpenPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard.cs:行号 43
+   在 CheckIn.StepPages.ReadIdCard.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:行号 67
+2014-08-08 10:29:40,939 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:121) ERROR CheckIn.MainWindow [(null)] - System.DllNotFoundException: 无法加载 DLL“sdtapi.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard_P1.SDT_ClosePort(Int32 iPort)
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard_P1.ClosePort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard_P1.cs:行号 119
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard.ClosePort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard.cs:行号 56
+   在 CheckIn.StepPages.ReadIdCard.Close() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:行号 267
+   在 CheckIn.StepPages.ReadIdCard.DTimerTick(Object sender, EventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:行号 163
+   在 System.Windows.Threading.DispatcherTimer.FireTick(Object unused)
+   在 System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   在 MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+2014-08-08 10:30:10,970 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:71) ERROR CheckIn.StepPages.ReadIdCard [(null)] - CommonLibrary.exception.BusinessException: 打开端口失败！
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard_P1.OpenPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard_P1.cs:行号 108
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard.OpenPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard.cs:行号 43
+   在 CheckIn.StepPages.ReadIdCard.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:行号 67
+************ System Start **********2014-08-08 11:27:25,570 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:71) ERROR CheckIn.StepPages.ReadIdCard [(null)] - CommonLibrary.exception.BusinessException: 打开端口失败！
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard_P1.OpenPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard_P1.cs:行号 108
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard.OpenPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard.cs:行号 43
+   在 CheckIn.StepPages.ReadIdCard.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:行号 67
+************ System Start **********2014-08-08 11:33:37,078 [13](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 基础连接已经关闭: 接收时发生错误。 ---> System.IO.IOException: 无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+************ System End ************************ System Start **********2014-08-08 11:34:20,418 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:71) ERROR CheckIn.StepPages.ReadIdCard [(null)] - CommonLibrary.exception.BusinessException: 打开端口失败！
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard_P1.OpenPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard_P1.cs:行号 108
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard.OpenPort() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard.cs:行号 43
+   在 CheckIn.StepPages.ReadIdCard.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:行号 67
+************ System Start **********2014-08-08 11:40:24,085 [13](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 基础连接已经关闭: 接收时发生错误。 ---> System.IO.IOException: 无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+************ System End ************************ System Start **********2014-08-08 11:41:03,729 [10](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:166) ERROR CheckIn.StepPages.ReadIdCard [(null)] - CommonLibrary.exception.BusinessException: 读卡失败！
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard_P1.ReadCard() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard_P1.cs:行号 161
+   在 HotelCheckIn_Interface_Hardware.ReadIdCard.IdCard.ReadCard() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\HotelCheckIn_Interface_Hardware\ReadIdCard\IdCard.cs:行号 82
+   在 CheckIn.StepPages.ReadIdCard.DTimerTick(Object sender, EventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\ReadIdCard.xaml.cs:行号 116
+************ System Start ********************** System End ************************ System Start **********2014-09-12 14:00:27,294 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:00:40,970 [1](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:121) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.QueryRztfTime() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 673
+   在 CheckIn.StepPages.InputPhone.Grid_Loaded(Object sender, RoutedEventArgs e) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\StepPages\InputPhone.xaml.cs:行号 81
+   在 System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   在 System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   在 System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   在 System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   在 System.Windows.BroadcastEventHelper.BroadcastEvent(DependencyObject root, RoutedEvent routedEvent)
+   在 System.Windows.BroadcastEventHelper.BroadcastLoadedEvent(Object root)
+   在 MS.Internal.LoadedOrUnloadedOperation.DoWork()
+   在 System.Windows.Media.MediaContext.FireLoadedPendingCallbacks()
+   在 System.Windows.Media.MediaContext.FireInvokeOnRenderCallbacks()
+   在 System.Windows.Media.MediaContext.RenderMessageHandlerCore(Object resizedCompositionTarget)
+   在 System.Windows.Media.MediaContext.RenderMessageHandler(Object resizedCompositionTarget)
+   在 System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   在 MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+2014-09-12 14:01:28,795 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:02:29,830 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:03:30,833 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:04:31,833 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:05:32,836 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:06:33,837 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:07:34,839 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:08:35,840 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:09:36,842 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:10:37,843 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:11:38,846 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:12:39,847 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:13:40,850 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:14:41,851 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:15:42,853 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:16:43,855 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:17:44,857 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:18:45,867 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:19:46,867 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:20:47,870 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:21:48,870 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:22:49,868 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:23:50,890 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:24:51,893 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:25:52,893 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:26:53,896 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:27:54,896 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:28:55,899 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:29:56,904 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:30:57,908 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:31:58,908 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:32:59,911 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:34:00,911 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:35:01,914 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:36:02,914 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:37:03,917 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:38:04,917 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:39:05,920 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:40:06,920 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:41:07,933 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:42:08,933 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:43:09,936 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+2014-09-12 14:44:10,936 [6](E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:71) ERROR CheckIn.MainWindow [(null)] - System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:19843
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 CheckIn.BackService.InterFace.IHeartBeat_Pt(HearBeatPara para) 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\Web References\BackService\Reference.cs:行号 255
+   在 CheckIn.MainWindow.HearHeat() 位置 E:\Projects\Hotels\HotelCheckIn\HotelCheckIn\CheckIn\MainWindow.xaml.cs:行号 57
+************ System End ************

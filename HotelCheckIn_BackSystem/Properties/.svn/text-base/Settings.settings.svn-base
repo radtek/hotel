@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HotelCheckIn_BackSystem.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="HotelCheckIn_BackSystem_PlatService_HeartBeatUpload" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:12648/DataService/WebService/Interface/HeartBeatUpload.asmx</Value>
+    </Setting>
+    <Setting Name="HotelCheckIn_BackSystem_PlatServ_InterFace" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.1.155:8015/DataService/WebService/InterFace.asmx</Value>
+    </Setting>
+    <Setting Name="HotelCheckIn_BackSystem_PlatServ_HeartBeatUpload" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.1.155:8013/DataService/WebService/Interface/HeartBeatUpload.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

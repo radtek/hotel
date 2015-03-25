@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/selfcheckin/!svn/ver/724/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/PmsRequest
+END
+PmsTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/724/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/PmsRequest/PmsTest.cs
+END
+SendRequest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/selfcheckin/!svn/ver/346/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/PmsRequest/SendRequest.cs
+END
+AnalysisXml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/selfcheckin/!svn/ver/346/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/PmsRequest/AnalysisXml.cs
+END
+CreatRequestXml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/selfcheckin/!svn/ver/392/trunk/HotelCheckIn/HotelCheckIn/HotelCheckIn_InterfaceSystem/PmsRequest/CreatRequestXml.cs
+END

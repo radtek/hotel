@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/selfcheckin/!svn/ver/855/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll
+END
+NPOI.dll
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/selfcheckin/!svn/ver/109/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll/NPOI.dll
+END
+ChuchaoDll.dll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/selfcheckin/!svn/ver/842/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll/ChuchaoDll.dll
+END
+JsonHelper.dll
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/selfcheckin/!svn/ver/109/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll/JsonHelper.dll
+END
+ICSharpCode.SharpZipLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/selfcheckin/!svn/ver/109/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll/ICSharpCode.SharpZipLib.dll
+END
+ParseJsonToDataBase.Service.dll
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/855/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll/ParseJsonToDataBase.Service.dll
+END
+log4net.dll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/selfcheckin/!svn/ver/10/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll/log4net.dll
+END
+MySql.Data.dll
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/selfcheckin/!svn/ver/64/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll/MySql.Data.dll
+END
+Newtonsoft.Json.dll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/selfcheckin/!svn/ver/787/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll/Newtonsoft.Json.dll
+END
+YOUO.Framework.DataAccess.dll
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/selfcheckin/!svn/ver/37/trunk/HotelCheckIn/HotelCheckIn/CommonLibrary/dll/YOUO.Framework.DataAccess.dll
+END

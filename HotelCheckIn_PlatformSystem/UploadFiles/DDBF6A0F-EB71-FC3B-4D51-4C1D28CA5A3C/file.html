@@ -1,0 +1,294 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+    产品下载
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet"  />
+<script src="/assets/jquery.js"></script> 
+<script src="/scripts/front-common.js"></script>
+<script src="/UserCenter/js/user.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap-ie6.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/ie.css">
+<![endif]-->
+<link href="/assets/fontawesome/css/font-awesome.min.css" rel="stylesheet" >
+<!--[if IE 7]>    
+<link href="/assets/fontawesome/css/font-awesome-ie7.min.css" rel="stylesheet">
+<![endif]-->
+<link href="/css/base.css" rel="stylesheet"  />
+<link href="/css/custom-style.css" rel="stylesheet"  />   
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script> 
+<!--[if lte IE 6]>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap-ie.js"></script>
+<script type="text/javascript" src="/assets/DD_belatedPNG_0.0.8a.js"></script>
+<script> DD_belatedPNG.fix('.png,img,background');</script>
+<![endif]-->
+
+    
+    <script type="text/javascript">
+        function GetFiles() {
+            if (!currentUserIsLogin()) {
+                redirectToLogin('http%3a%2f%2fwww.evget.com%2fproduct%2f6955%2ffile%3ft%3d0');
+                return;
+            }
+
+            $.ajax({
+                type: "post",
+                async: false,
+                timeout: 10000,
+                url: '/Catalog/Product/Handlers/GetProductFiles.ashx',
+                data: {fid:'6955',t:'0'},
+                dataType: "json",
+                cache: false,
+                success: function (url) {
+                    if (!url || url == '') {
+                        alert("暂无产品下载!");
+                        return;
+                    }
+                    location.href = url;
+                },
+                error: function () {
+                    alert("请重试！");
+                    location.reload();
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>   
+
+<div class="header mAuto">
+    <div class="topbar">
+        <div class="w980 clear font12">
+            <span class="fLeft gray" style="width: 600px;">
+                帮助企业打造成功软件！ &nbsp;&nbsp;<i class="icon-weibo"></i>
+                <a href="http://www.weibo.com/evget" target="_blank">关注新浪微博</a> 
+                <i class="icon-rss"></i>
+                <a href="http://www.evget.com/zh-CN/Products/relaserss.xml" target="_blank">慧都资讯订阅</a>
+            </span> 
+            
+ <span class="fRight gray">
+      <i class="icon-desktop"></i>
+            <a href="/UserCenter/Passport/Login.aspx" title="点击登录" class="mR10" target="_parent">登录</a> 
+            <i class="icon-user "></i>
+            <a href="/UserCenter/Passport/SignUp.aspx" title="注册" class="mR10" target="_parent">注册</a> 
+            <i class="icon-key"></i>
+            <a href="/UserCenter/Passport/ResetPassword.aspx" title="找回密码" target="_parent">找回密码</a>
+</span>
+        </div>
+    </div>
+    <div class="searchbg w980">
+        <h1 class="logo"><a href="http://www.evget.com" title="慧都控件网">
+            <img src="http://www.evget.com/zh-CN/img/logo_evget.jpg" alt="慧都控件网" /></a></h1>
+        <div class="search-bar">
+            <div class="nav font12"><span>热门搜索：<a href="/product/188" title="XGantt控件,甘特图控件,Component,控件,中间件">XGantt</a> | <a href="/product/740" title="DevExpress,DevExpress Component,Dev正版,Component,控件,中间件,组件">DevExpress</a> | <a href="/product/965" title="WebUI,用户界面控件,BS控件,Component,控件,中间件,组件">WebUI</a> |<a href="/product/88" title="BCGControlBar,VS BCGBar,用户界面控件,Component,控件,中间件,组件"> BCGControlBar</a> | <a href="/product/2648" title="silverlight 图表">silverlight 图表</a></span></div>
+            <span class="left block mainbg"></span>
+            
+<div class="search-input mainbg">
+    <input type="text" id="product-keyWords" class="search" maxlength="200" />
+</div>
+<input type="button" id="product-btn-search" class="search-submit mainbg" value ="搜索控件" />
+ <script type="text/javascript">
+   var istargetBlank = true;
+   $(function() {
+       $.ajax({
+           type: "get",
+           async: true,
+           timeout: 10000,
+           url: "/Catalog/Product/Handlers/GetPublishedProductCount.ashx",
+           dataType: "json",
+           cache: true,//缓存
+           success: function(result) {
+               if (result != NaN) {
+                   $("#product-keyWords").attr("placeholder", "产品总数:" + result);
+               }
+           },
+           error: function() {
+
+           }
+       });
+
+       $("#product-btn-search").click(function() {
+           var keyWords = $.trim($("#product-keyWords").val());
+           if (keyWords == '') {
+               return;
+           }
+
+           if (istargetBlank) {
+               window.open("/search?k=" + encodeURIComponent(keyWords));
+           } else {
+               location.href = "/search?k=" + encodeURIComponent(keyWords);
+           }
+       });
+
+       $("#product-keyWords").bind("keyup", function (event) {
+           if (event.keyCode == 13) {
+               event.stopPropagation();
+               $("#product-btn-search").click();
+           }
+       });
+   });
+ </script>
+            <span class="right mainbg"></span>
+            <ul class="sale-serviec font12">
+                <li><a href="../../zh-CN/FAQ/?buy" class="blue">购买流程</a></li>
+                <li><a href="../../zh-CN/FAQ/?sale">销售承诺</a></li>
+                <li><a href="../../zh-CN/FAQ/?pay">支付方式</a></li>
+                <li><a href="../../zh-CN/FAQ/?service">慧都服务</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="newnav">
+        <div class="w980 clear">
+             <ul class="navul fLeft" id="main-nav">
+                <li><a href="/">首页</a></li>
+                <li><a href="/zh-CN/products">控件</a></li>
+                <li><a href="/Catalog/Product/software.html">工具软件</a></li>
+                <li><a href="/zh-CN/Trains/default.aspx">慧都学院</a></li>
+                <li><a href="/zh-CN/EVQuestions">控件问答</a></li>
+                <li><a href="/zh-CN/Consultation/">咨询服务</a></li>
+                <li><a href="/zh-CN/Videos/Default.aspx">视频</a></li>
+                <li><a href="/zh-CN/Info/Article.aspx">资讯</a></li>
+                <li><a href="/zh-CN/about/index.aspx">关于慧都</a></li>
+            </ul>           
+            <span class="tel fRight font14 white">电话：023-66090381</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    hightLightMainNav(1);
+</script>
+    
+<div class="clearfix w980 mT20 fontYH">
+  <div class="clear" >
+   <div class="hero-unit lineBorder3">
+  <h3><a href="/product/1642" >RadControls for WinForms</a></h3>  
+   <table cellspacing="0" class="table table-bordered bgWhite">
+             <caption class=" h32 line32" style="text-align:left;"><p>当前下载内容</p></caption>
+            
+                    <tbody>                
+                    <tr class="font14">
+                        <td>
+                            RadControls For WinForms Q2 2013 SP1下载
+                        </td>
+                        <td>
+                            4.8 MB
+                        </td>
+                        <td >
+                            2013-09-25
+                        </td>
+                    </tr>
+            </tbody></table>
+  <p>
+    <a id="filedownload" class="btn btn-primary btn-large" href="javascript:GetFiles();">
+        <i class="icon-cloud-download"></i> 普通下载
+    </a> <a class="btn disabled btn-large">
+     VIP高速下载即将开通
+    </a>
+  </p>     
+  
+  <ul class="font14 gray mT20" style="list-style:disc;margin-left:20px;">
+  <li class="line18">本站提供普通FTP方式下载，同一IP支持2个线程。</li>
+  <li class="line18">如果您在下载中遇到问题，可以与我们联系，我们可免费为您快递备份光盘。</li>
+  </ul>
+</div>
+</div>
+  <div class="clear mT10">
+      <h4 class="page-header">该产品相关下载 <small>各种版本、文档、演示等下载列表</small></h4>
+        <div class="clear w98auto mT10">
+            <table class="table table-condensed table-hover table-bordered">
+                <caption class=" h32 line32" style="text-align:left;"><h5>试用版</h5></caption>          
+                    <tbody><tr class="table-header bgGray">
+                        <td style="width: 75%;">
+                            名称
+                        </td>
+                        <td style="width:10%;">
+                            大小
+                        </td>
+                        <td style="width: 15%;">
+                            更新时间
+                        </td>
+                    </tr>
+                    
+                        <tr class="font12">
+                            <td>
+                                <a href="/product/6955/file?t=0" target="_blank" class="linkbluenew"> RadControls For WinForms Q2 2013 SP1下载</a>
+                            </td>
+                            <td>
+                                <span style="font-size: 11px;">4.8 MB</span>
+                            </td>
+                            <td style="font-size: 11px;">
+                                2013-09-25
+                            </td>
+                        </tr>
+                                                          
+            </tbody>
+            </table> 
+     
+        </div> 
+        
+  </div>
+</div>
+
+
+<!--footer begin-->
+<div id="footer" class="mT10 pTB10 textCenter w980 posnR font12">
+    <p class="line24">
+        &nbsp;<a class="linkfooter" href="/zh-CN/info/news.aspx">版本更新</a>
+        &nbsp;|&nbsp;<a class="linkfooter" href="http://www.evget.com/zt/EVGET-Software-Directory.htm">发布产品</a>
+        &nbsp;|&nbsp;<a class="linkfooter" href="http://www.evget.com/zh-CN/about/Customers.aspx"><span class="red">慧都客户</span></a>
+        &nbsp;|&nbsp;<a class="linkfooter" href="http://http://doc.evget.com/">慧都在线文档</a>
+        &nbsp;|&nbsp;<a class="linkfooter" href="/zh-CN/Questionnaire/WebView.aspx">问卷调查</a>
+        &nbsp;|&nbsp;<a class="linkfooter" href="/zh-CN/about/Friends.aspx">合作伙伴</a>
+        &nbsp;|&nbsp;<a class="linkfooter" href="/zh-CN/FAQ/?t=buy">产品购买流程</a>
+        &nbsp;|&nbsp;<a class="linkfooter" href="/zh-CN/about/index.aspx">关于慧都</a>
+        &nbsp;| &nbsp;<a class="linkfooter" href="/zh-CN/About/AboutEn.aspx">About Us</a>
+        &nbsp;|&nbsp;<a class="linkfooter" href="/zh-CN/about/position.aspx">联系慧都</a>
+    </p>
+    <p class="line24">
+        慧都科技旗下网站-<a href="http://www.evget.com" class="linkblue">慧都控件网</a> 版权所有 Copyright 2003-2013
+        <a class="linkfooter" href="http://www.miibeian.gov.cn/" target="_blank">渝ICP备12000582号</a><span class="hide"><script  type="text/javascript" src="http://s21.cnzz.com/stat.php?id=3064034&web_id=3064034" language="JavaScript"></script>
+    </span></p>
+    <p class="line24" style="color:Red;">☆慧都控件网所有软件产品均为原厂商直接授权的正版产品☆</p>
+    <a href="http://www.cqnet110.gov.cn" target="_blank" style=" position:absolute;top:5px;left:20px;"><img alt="网警备案" src="http://image.evget.com/zh-cn/images/sentrybox.gif" /></a> <a href="http://beian.cqnet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=50015101500334&bado=evget.com" target="_blank"></a>
+</div>
+<div class="textCenter"><a target="_blank" href="http://beian.cqnet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=50015101500334&bado=evget.com"><img alt="网警备案" src="http://image.evget.com/zh-cn/images/wa50015101500336.gif" /></a></div>
+<div style="display: none">
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-16875888-1']);
+        _gaq.push(['_setDomainName', 'evget.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        <!--
+    var bd_cpro_rtid = "Pj6Yn16";
+    //-->
+    </script>
+    <script type="text/javascript" src="http://cpro.baidu.com/cpro/ui/rt.js"></script>
+    <div style="display:none;"><img alt="百度" height="0" width="0" style="border-style:none;" src="http://eclick.baidu.com/rt.jpg?t=noscript&rtid=Pj6Yn16" /></div>
+    <script type="text/javascript" src="http://se.360.cn/common/qihoo_ie6_tips.js"></script>
+</div>
+<script language="javascript" type="text/javascript" src="http://chat.live800.com/live800/chatClient/monitor.js?jid=1316272045&amp;companyID=60357&amp;configID=43314&amp;codeType=custom"></script>
+
+</body>
+</html>
+<!-- Processed in 26 ms.-->

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/selfcheckin/!svn/ver/889/trunk/HotelCheckIn/HotelCheckIn/CheckIn/Web%20References/BackService
+END
+InterFace.disco
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/889/trunk/HotelCheckIn/HotelCheckIn/CheckIn/Web%20References/BackService/InterFace.disco
+END
+Reference.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/selfcheckin/!svn/ver/889/trunk/HotelCheckIn/HotelCheckIn/CheckIn/Web%20References/BackService/Reference.cs
+END
+ReturnInfo.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/selfcheckin/!svn/ver/583/trunk/HotelCheckIn/HotelCheckIn/CheckIn/Web%20References/BackService/ReturnInfo.datasource
+END
+Room.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/selfcheckin/!svn/ver/810/trunk/HotelCheckIn/HotelCheckIn/CheckIn/Web%20References/BackService/Room.datasource
+END
+InterFace.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/selfcheckin/!svn/ver/889/trunk/HotelCheckIn/HotelCheckIn/CheckIn/Web%20References/BackService/InterFace.wsdl
+END
+QueryNoAndPj.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/selfcheckin/!svn/ver/583/trunk/HotelCheckIn/HotelCheckIn/CheckIn/Web%20References/BackService/QueryNoAndPj.datasource
+END
+Reference.map
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/selfcheckin/!svn/ver/889/trunk/HotelCheckIn/HotelCheckIn/CheckIn/Web%20References/BackService/Reference.map
+END
+RoomQuality.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/selfcheckin/!svn/ver/810/trunk/HotelCheckIn/HotelCheckIn/CheckIn/Web%20References/BackService/RoomQuality.datasource
+END

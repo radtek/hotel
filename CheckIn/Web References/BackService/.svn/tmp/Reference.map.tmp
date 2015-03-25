@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+<<<<<<< .mine
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://localhost:19843/DataService/WebService/InterFace.asmx?disco" filename="InterFace.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost:19843/DataService/WebService/InterFace.asmx?wsdl" filename="InterFace.wsdl" />
+=======
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://192.168.20.200:8081/DataService/WebService/InterFace.asmx?wsdl" filename="InterFace.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://192.168.20.200:8081/DataService/WebService/InterFace.asmx?disco" filename="InterFace.disco" />
+>>>>>>> .r939
+  </Results>
+</DiscoveryClientResultsFile>
